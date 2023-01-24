@@ -1,39 +1,40 @@
 <mammals>
     <species>
-        <name>Elephant</name>
-        <weight unit="kg">4000</weight>
-        <size unit="m">3</size>
-        <speed unit="km/h">40</speed>
-        <lifespan unit="years">60</lifespan>
-        <location>Africa</location>
-        <food>Veggies</food>
-        <family>
-            <maleName>elephant</maleName>
-            <femaleName>elephant</femaleName>
-            <babyName>calf</babyName>
-            <gestationPeriod>22 months</gestationPeriod>
-        </family>
+        <name>The fox</name>
+        <img>https://d23.com/app/uploads/2015/07/tod-1180x6001-1180x600.jpg</img>
+        <description>Foxes are small to medium-sized, omnivorous mammals belonging to several genera of the family Canidae. They have a flattened skull, upright, triangular ears, a pointed, slightly upturned snout, and a long bushy tail (or brush).</description>
+        <weight unit="cm">35-50</weight>
+        <size unit="cm">45-90</size>
+        <speed unit="km/h">50</speed>
+        <lifespan unit="years">3-4</lifespan>
+        <dailysleep unit="years">3-4</dailysleep>
+        <location>
+            <area>Europe</area>
+            <area>North America</area>
+            <area>Asia</area>
+        </location>
         <famousAnimal>
-            <name>Dumbo</name>
+            <name>Tod</name>
+            <name>Nick Wilde</name>
         </famousAnimal>
     </species>
     <species>
-        <name>Lion</name>
-        <weight unit="kg">200</weight>
-        <size unit="m">2</size>
-        <speed unit="km/h">80</speed>
-        <lifespan unit="years">13</lifespan>
-        <location>Africa</location>
-        <food>Carnivorous</food>
-        <family>
-            <maleName>Lion</maleName>
-            <femaleName>Lioness</femaleName>
-            <babyName>Lion cub</babyName>
-            <gestationPeriod>14 months</gestationPeriod>
-        </family>
+        <name>The fox</name>
+        <img>https://d23.com/app/uploads/2015/07/tod-1180x6001-1180x600.jpg</img>
+        <description>Foxes are small to medium-sized, omnivorous mammals belonging to several genera of the family Canidae. They have a flattened skull, upright, triangular ears, a pointed, slightly upturned snout, and a long bushy tail (or brush).</description>
+        <weight unit="cm">35-50</weight>
+        <size unit="cm">45-90</size>
+        <speed unit="km/h">50</speed>
+        <lifespan unit="years">3-4</lifespan>
+        <dailysleep unit="years">3-4</dailysleep>
+        <location>
+            <area>Europe</area>
+            <area>North America</area>
+            <area>Asia</area>
+        </location>
         <famousAnimal>
-            <name>Simba</name>
-            <name>Pumba</name>
+            <name>Tod</name>
+            <name>Nick Wilde</name>
         </famousAnimal>
     </species>
 </mammals>
