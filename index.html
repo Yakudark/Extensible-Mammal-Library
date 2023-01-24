@@ -27,10 +27,11 @@
             <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">+ New animal</a>
         </div>
     </header>
-    <main>
-    
-     
-    <!-- end follow cursor -->
+
+
+    <main> 
+    <!-- sidebar -->
+    <section class="sidebar-section d-none d-md-inline">
     <div class="main-card">
         <div class="profile-card text-center"><img src="./assets/rox.jpg" class="img img-responsive">
             <div class="profile-content">
@@ -45,45 +46,221 @@
                     <div class="row">
 
                         <div class="col profile-overview">
-                            <p class="height">Height</p>
-                            <h4>35-50 cm</h4>
+                            <p class="characteristic">Height</p>
+                            <h4 class="height">35-50 cm</h4>
                         </div>
 
                         <div class="col profile-overview">
-                            <p class="length">Length</p>
-                            <h4>45-90 cm</h4>
+                            <p class="characteristic">Length</p>
+                            <h4 class="length">45-90 cm</h4>
                         </div>
                     </div>
 
                     <div class="row">
                         <div class="col profile-overview">
-                            <p class="speed ">Speed</p>
-                            <h4>50 km/h</h4>
+                            <p class="characteristic">Speed</p>
+                            <h4 class="speed">50 km/h</h4>
                         </div>
 
                         <div class="col profile-overview">
-                            <p class="life">Life span</p>
-                            <h4>3-4 ans</h4>
+                            <p class="characteristic">Life span</p>
+                            <h4 class="gestation">3-4 ans</h4>
                         </div>
                     </div>
 
                     <div class="row">
                         <div class="col profile-overview">
-                            <p class="gestation">Gestation</p>
-                            <h4>49-58 jours</h4>
+                            <p class="characteristic">Location</p>
+                            <h4 class="location">Europe, North America, Asia</h4>
                         </div>
                         <div class="col profile-overview">
-                            <p class="sleep">daily sleep</p>
-                            <h4>9-8 heures</h4>
+                            <p class="characteristic">daily sleep</p>
+                            <h4 class="sleep">9-8 heures</h4>
                         </div>
                     </div>
+                    <div class="row">
+                      <div class="col profile-overview">
+                          <p class="characteristic">Famous animal</p>
+                          <h4 class="famous">Tod, Nick Wilde</h4>
+                      </div>
+                      
+                  </div>
 
                 </div>
             </div>
         </div>
     </div>
+  </section>
+   <!-- menu -->
+   
+    <section class="animal-list container landingpage-cards flex-col col mt-4">
+      <div class="row gap-4 d-flex mt-2 d-sm-flex justify-content-center">
+        <!-- carte panda -->
+        <div class="card">
+          <img
+            src="./img_cards/kun_fu_panda.png"
+            class="card-img-panda border rounded-2"
+          />
+          <div class="card-body">
+            <p class="card-text d-flex justify-content-center">Panda</p>
+          </div>
+        </div>
+        <!-- carte panda -->
+        <!-- carte raton -->
+        <div class="card">
+          <img
+            src="./img_cards/meeko-pocahontas.png"
+            class="card-img border rounded-2 align-self-center"
+          />
+          <div class="card-body">
+            <p class="card-text d-flex justify-content-center">Raccoon</p>
+          </div>
+        </div>
+        <!-- carte raton -->
+        <!-- carte dragon -->
+        <div class="card">
+          <img
+            src="./img_cards/muchu-dragon.png"
+            class="card-img border rounded-2 align-self-center"
+          />
+          <div class="card-body">
+            <p class="card-text d-flex justify-content-center">Dragon</p>
+          </div>
+        </div>
+        <!-- carte dragon -->
+        <!-- carte alpaga -->
+        <div class="card">
+          <img
+            src="./img_cards/alpaga.png"
+            class="card-img border rounded-2 align-self-center"
+          />
+          <div class="card-body">
+            <p class="card-text d-flex justify-content-center">Alpaca</p>
+          </div>
+        </div>
+        <!-- carte alpaga -->
+        <!-- carte tigre -->
+        <div class="card">
+          <img
+            src="./img_cards/tiger.jpg"
+            class="card-img border rounded-2 align-self-center"
+          />
+          <div class="card-body">
+            <p class="card-text d-flex justify-content-center">Tiger</p>
+          </div>
+        </div>
+        <!-- carte tigre -->
+        <!-- carte elephant -->
+        <div class="card">
+          <img
+            src="./img_cards/Tantor_Tarzan.png"
+            class="card-img border rounded-2 align-self-center"
+          />
+          <div class="card-body">
+            <p class="card-text d-flex justify-content-center">Elephant</p>
+          </div>
+        </div>
+        <!-- carte elephant -->
+        <!-- carte kitten -->
+        <div class="card">
+          <img
+            src="./img_cards/kitten_Marie.png"
+            class="card-img border rounded-2 align-self-center"
+          />
+          <div class="card-body">
+            <p class="card-text d-flex justify-content-center">Cat</p>
+          </div>
+        </div>
+        <!-- carte kitten -->
+        <!-- carte fox -->
+        <div class="card">
+          <img
+            src="./img_cards/fox.jpg"
+            class="card-img border rounded-2 align-self-center"
+          />
+          <div class="card-body">
+            <p class="card-text d-flex justify-content-center">Fox</p>
+          </div>
+        </div>
+        <!-- carte fox -->
+        <!-- carte meerkat -->
+        <div class="card">
+          <img
+            src="./img_cards/suricate.jpg"
+            class="card-img border rounded-2 align-self-center"
+          />
+          <div class="card-body">
+            <p class="card-text d-flex justify-content-center">Meerkat</p>
+          </div>
+        </div>
+        <!-- carte meerkat -->
+        <!-- carte lion -->
+        <div class="card">
+          <img
+            src="./img_cards/simba.jpg"
+            class="card-img border rounded-2 align-self-center"
+          />
+          <div class="card-body">
+            <p class="card-text d-flex justify-content-center">Lion</p>
+          </div>
+        </div>
+        <!-- carte lion -->
+        <!-- carte rabbit -->
+        <div class="card">
+          <img
+            src="./img_cards/rabbit.png"
+            class="card-img border rounded-2 align-self-center"
+          />
+          <div class="card-body">
+            <p class="card-text d-flex justify-content-center">Rabbit</p>
+          </div>
+        </div>
+        <!-- carte rabbit -->
+        <!-- carte dog -->
+        <div class="card">
+          <img
+            src="./img_cards/dog.png"
+            class="card-img border rounded-2 align-self-center"
+          />
+          <div class="card-body">
+            <p class="card-text d-flex justify-content-center">Dog</p>
+          </div>
+        </div>
+        <!-- carte dog -->
+        <!-- carte human -->
+        <div class="card">
+          <img
+            src="./img_cards/human.png"
+            class="card-img border rounded-2 align-self-center"
+          />
+          <div class="card-body">
+            <p class="card-text d-flex justify-content-center">Human</p>
+          </div>
+        </div>
+        <!-- carte human -->
+        <!-- carte singe -->
+        <div class="card">
+          <img
+            src="./img_cards/singe.png"
+            class="card-img border rounded-2 align-self-center"
+          />
+          <div class="card-body">
+            <p class="card-text d-flex justify-content-center">Monkey</p>
+          </div>
+        </div>
+        <!-- carte singe -->
+        <!-- carte ours -->
+        <div class="card">
+          <img
+            src="./img_cards/bear.jpg"
+            class="card-img border rounded-2 align-self-center"
+          />
+          <div class="card-body">
+            <p class="card-text d-flex justify-content-center">Bear</p>
+          </div>
+        </div>
     </div>
-
+        <!-- carte ours -->
 
     </main>
     <!-- Footer -->

@@ -13,28 +13,21 @@
 }
 
 body {
-    background-color: #F1F2F3;
+    margin: 0;
+    background: var(--background);
     font-family: 'Cutiemolly', sans-serif;
 }
-
-
-
-
 
 *{
     font-family: 'Londrina Solid', cursive;
     box-sizing: border-box;
 }
 
-body{
-    margin: 0;
-    background: var(--background);
-}
-
 /*Header*/
 header{
     position: sticky;
     top:0;
+    z-index: 5;
      background: var(--primary);
   
 }
@@ -76,9 +69,30 @@ header a:hover{
 
 main{
     min-height: 850px;
+    display: flex;
 }
 
 /*card*/
+.card:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+  }
+
+  img {
+    height: 150px;
+    margin-top: 10px;
+    border-radius: 0;
+  }
+
+  .card{
+    transition: 500ms;
+    width: 18rem;
+    border: none; 
+    box-shadow: 0px 0px 5px #7dabd1b9;
+  }
+
+/*sidebar*/
+
 /* -----------------Follow cursor----------------- */
 #paw-simple {
     width: 50px;
@@ -88,25 +102,33 @@ main{
 /* -----------------END Follow cursor----------------- */
 
 /* -------------------Main cards vianney-------------------------- */
+.sidebar-section{
+    width: 400px;
+    display: none;
+}
 
+.main-card{
+    margin: auto;
+    width: fit-content;
+    top: 100px;
+    left: 5%;
+    position: sticky;
+}
 .profile-card {
     max-width: 300px;
     background-color: #FFF;
     border-radius: 5px;
-    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.1);
     overflow: hidden;
     position: relative;
     margin: 10px auto;
-    cursor: pointer;
-    filter: drop-shadow(30px 10px 4px #7DABD1);
-    /* filter: drop-shadow(0 0 0.75rem #7DABD1); */
+   box-shadow: 0px 0px 10px #7dabd1b9;
 }
 
 .profile-card img {
     transition: all 0.25s linear;
     width: 400px;
     box-shadow: #273751;
-    
+    margin: 0;
 }
 
 .profile-card .profile-content {
@@ -133,20 +155,25 @@ main{
     letter-spacing: 1.5px;
     color: white;
     text-shadow: rgb(255, 68, 0) 2px 6px;
-    
 }
 
+.profile-card .characteristic{
+    font-size: 16px !important;
+    margin: 5px;
+}
+.profile-card h4{
+    font-size: 19px;
+}
 .profile-card .profile-description {
     color: #777;
-    font-size: 12px;
+    font-size: 15px;
     padding: 10px;
-    
 }
 
 .profile-card .profile-overview {
-    padding: 15px 0px;
-    
+    padding: 5px 0px;
 }
+
 
 .profile-card .profile-overview p {
     font-size: 10px;
@@ -199,6 +226,7 @@ main{
 footer{
     padding-top: 40px;
     background: black;
+    margin-top: 50px;
 }
 
 footer span{
@@ -223,7 +251,6 @@ footer span{
 }
 
 #add-animal:hover{
-
     background: #609fd2;
 }
 
