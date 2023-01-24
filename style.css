@@ -1,4 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@100;300;400;900&display=swap');
+@font-face { 
+    font-family: 'Cutiemolly';
+    src: url('./assets/Cutiemollydemo-2ORE3.ttf');
+}
+
 
 :root{
     --primary : #7DABD1;
@@ -6,6 +11,15 @@
     --card : #fff;
     --font : rgb(39, 40, 47); 
 }
+
+body {
+    background-color: #F1F2F3;
+    font-family: 'Cutiemolly', sans-serif;
+}
+
+
+
+
 
 *{
     font-family: 'Londrina Solid', cursive;
@@ -59,9 +73,127 @@ header a:hover{
 
 
 /*Main*/
+
 main{
     min-height: 850px;
 }
+
+/*card*/
+/* -----------------Follow cursor----------------- */
+#paw-simple {
+    width: 50px;
+    height: 50px;
+    position:absolute;
+}
+/* -----------------END Follow cursor----------------- */
+
+/* -------------------Main cards vianney-------------------------- */
+
+.profile-card {
+    max-width: 300px;
+    background-color: #FFF;
+    border-radius: 5px;
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    position: relative;
+    margin: 10px auto;
+    cursor: pointer;
+    filter: drop-shadow(30px 10px 4px #7DABD1);
+    /* filter: drop-shadow(0 0 0.75rem #7DABD1); */
+}
+
+.profile-card img {
+    transition: all 0.25s linear;
+    width: 400px;
+    box-shadow: #273751;
+    
+}
+
+.profile-card .profile-content {
+    position: relative;
+    padding: 15px;
+    background-color: #FFF;
+    
+}
+
+.profile-card .profile-name {
+    font-weight: bold;
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    top: -70px;
+    color: #FFF;
+    font-size: 17px;
+    
+}
+
+.profile-card .profile-name p {
+    font-weight: 600;
+    font-size: 3.5rem;
+    letter-spacing: 1.5px;
+    color: white;
+    text-shadow: rgb(255, 68, 0) 2px 6px;
+    
+}
+
+.profile-card .profile-description {
+    color: #777;
+    font-size: 12px;
+    padding: 10px;
+    
+}
+
+.profile-card .profile-overview {
+    padding: 15px 0px;
+    
+}
+
+.profile-card .profile-overview p {
+    font-size: 10px;
+    font-weight: 600;
+    color: #777;
+}
+
+.profile-card .profile-overview h4 {
+    color: #273751;
+    font-weight: bold;
+    
+}
+
+.profile-card .profile-content::before {
+    content: "";
+    position: absolute;
+    height: 20px;
+    top: -10px;
+    left: 0px;
+    right: 0px;
+    background-color: #FFF;
+    z-index: 0;
+    transform: skewY(3deg);
+    
+}
+
+/* .profile-card:hover img {
+    transform: rotate(5deg) scale(1.1, 1.1);
+    filter: brightness(110%);
+} */
+.profile-card img {
+    --s: 300px;   /* the size of the image */
+    --b: 8px;     /* the border thickness*/
+    --g: 14px;    /* the gap */
+    --c: #4ECDC4; /* the color */
+    
+    width: var(--s);
+    aspect-ratio: 1;
+    outline: calc(var(--s)/2) solid #0009;
+    outline-offset: calc(var(--s)/-2);
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  .profile-card img:hover {
+    outline: var(--b) solid var(--c);
+    outline-offset: var(--g);
+  }
 
 /*Footer*/
 footer{
@@ -94,7 +226,4 @@ footer span{
 
     background: #609fd2;
 }
-
-
-
 
