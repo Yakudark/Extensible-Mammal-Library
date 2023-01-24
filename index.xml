@@ -1,0 +1,39 @@
+<mammals>
+    <species>
+        <name>Elephant</name>
+        <weight unit="kg">4000</weight>
+        <size unit="m">3</size>
+        <speed unit="km/h">40</speed>
+        <lifespan unit="years">60</lifespan>
+        <location>Africa</location>
+        <food>Veggies</food>
+        <family>
+            <maleName>elephant</maleName>
+            <femaleName>elephant</femaleName>
+            <babyName>calf</babyName>
+            <gestationPeriod>22 months</gestationPeriod>
+        </family>
+        <famousAnimal>
+            <name>Dumbo</name>
+        </famousAnimal>
+    </species>
+    <species>
+        <name>Lion</name>
+        <weight unit="kg">200</weight>
+        <size unit="m">2</size>
+        <speed unit="km/h">80</speed>
+        <lifespan unit="years">13</lifespan>
+        <location>Africa</location>
+        <food>Carnivorous</food>
+        <family>
+            <maleName>Lion</maleName>
+            <femaleName>Lioness</femaleName>
+            <babyName>Lion cub</babyName>
+            <gestationPeriod>14 months</gestationPeriod>
+        </family>
+        <famousAnimal>
+            <name>Simba</name>
+            <name>Pumba</name>
+        </famousAnimal>
+    </species>
+</mammals>
