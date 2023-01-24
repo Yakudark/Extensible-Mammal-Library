@@ -1,6 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@100;300;400;900&display=swap');
+
 :root{
     --primary : #7DABD1;
-    --background : #e6e6e6;
+    --background : #eff8ff;
     --card : #fff;
     --font : rgb(39, 40, 47); 
 }
+
+*{
+    font-family: 'Londrina Solid', cursive;
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    background: var(--background);
+}
+
+/*Header*/
+header{
+    position: sticky;
+    top:0;
+     background: var(--primary);
+  
+}
+
+.header-content{
+    max-width: 1450px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header a{
+    font-size: 30px;
+    background: var(--primary);
+    color: white;
+    text-decoration:none;
+    padding: 15px;
+    transition: 500ms;
+}
+
+header a:hover{
+    font-size: 30px;
+    background: white;
+    color: var(--primary);
+    text-decoration:none;
+}
+
+.logo{
+    font-size: 50px;
+    height: 100%;
+    margin: 0;
+    color: #fff;
+    padding: 0 15px;
+}
+
+
+/*Main*/
+main{
+    min-height: 850px;
+}
+
+/*Footer*/
+footer{
+    padding-top: 40px;
+    background: black;
+}
+
+footer span{
+    margin: 30px 0 10px 0;
+    font-weight: 300;
+    font-size: 18px;
+    color: rgb(181, 181, 181);
+}
+
+.footer-content{
+    max-width: 1450px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*Modal*/
+#add-animal{
+    background: var(--primary);
+    color: white;
+}
+
+#add-animal:hover{
+
+    background: #609fd2;
+}
+
+
+
+
