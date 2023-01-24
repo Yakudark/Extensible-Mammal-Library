@@ -1,176 +1,162 @@
-@import url('https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@100;300;400;900&display=swap');
-@font-face { 
-    font-family: 'Cutiemolly';
-    src: url('./assets/Cutiemollydemo-2ORE3.ttf');
+@import url("https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@100;300;400;900&display=swap");
+@font-face {
+  font-family: "Cutiemolly";
+  src: url("./assets/Cutiemollydemo-2ORE3.ttf");
 }
 
-
-:root{
-    --primary : #7DABD1;
-    --background : #eff8ff;
-    --card : #fff;
-    --font : rgb(39, 40, 47); 
+:root {
+  --primary: #7dabd1;
+  --background: #eff8ff;
+  --card: #fff;
+  --font: rgb(39, 40, 47);
 }
 
 body {
-    background-color: #F1F2F3;
-    font-family: 'Cutiemolly', sans-serif;
+  background-color: #f1f2f3;
+  font-family: "Cutiemolly", sans-serif;
+  height: auto;
 }
 
-
-
-
-
-*{
-    font-family: 'Londrina Solid', cursive;
-    box-sizing: border-box;
+* {
+  font-family: "Londrina Solid", cursive;
+  box-sizing: border-box;
 }
 
-body{
-    margin: 0;
-    background: var(--background);
+body {
+  margin: 0;
+  background: var(--background);
 }
 
 /*Header*/
-header{
-    position: sticky;
-    top:0;
-     background: var(--primary);
-  
+header {
+  position: sticky;
+  top: 0;
+  background: var(--primary);
 }
 
-.header-content{
-    max-width: 1450px;
-    margin: auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.header-content {
+  max-width: 1450px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-header a{
-    font-size: 30px;
-    background: var(--primary);
-    color: white;
-    text-decoration:none;
-    padding: 15px;
-    transition: 500ms;
+header a {
+  font-size: 30px;
+  background: var(--primary);
+  color: white;
+  text-decoration: none;
+  padding: 15px;
+  transition: 500ms;
 }
 
-header a:hover{
-    font-size: 30px;
-    background: white;
-    color: var(--primary);
-    text-decoration:none;
+header a:hover {
+  font-size: 30px;
+  background: white;
+  color: var(--primary);
+  text-decoration: none;
 }
 
-.logo{
-    font-size: 50px;
-    height: 100%;
-    margin: 0;
-    color: #fff;
-    padding: 0 15px;
+.logo {
+  font-size: 50px;
+  height: 100%;
+  margin: 0;
+  color: #fff;
+  padding: 0 15px;
 }
-
 
 /*Main*/
 
-main{
-    min-height: 850px;
+main {
+  min-height: 850px;
 }
 
 /*card*/
 /* -----------------Follow cursor----------------- */
 #paw-simple {
-    width: 50px;
-    height: 50px;
-    position:absolute;
+  width: 50px;
+  height: 50px;
+  position: absolute;
 }
 /* -----------------END Follow cursor----------------- */
 
 /* -------------------Main cards vianney-------------------------- */
 
 .profile-card {
-    max-width: 300px;
-    background-color: #FFF;
-    border-radius: 5px;
-    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-    position: relative;
-    margin: 10px auto;
-    cursor: pointer;
-    filter: drop-shadow(30px 10px 4px #7DABD1);
-    /* filter: drop-shadow(0 0 0.75rem #7DABD1); */
+  max-width: 300px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  position: relative;
+  margin: 10px auto;
+  cursor: pointer;
+  filter: drop-shadow(30px 10px 4px #7dabd1);
+  /* filter: drop-shadow(0 0 0.75rem #7DABD1); */
 }
 
 .profile-card img {
-    transition: all 0.25s linear;
-    width: 400px;
-    box-shadow: #273751;
-    
+  transition: all 0.25s linear;
+  width: 400px;
+  box-shadow: #273751;
 }
 
 .profile-card .profile-content {
-    position: relative;
-    padding: 15px;
-    background-color: #FFF;
-    
+  position: relative;
+  padding: 15px;
+  background-color: #fff;
 }
 
 .profile-card .profile-name {
-    font-weight: bold;
-    position: absolute;
-    left: 0px;
-    right: 0px;
-    top: -70px;
-    color: #FFF;
-    font-size: 17px;
-    
+  font-weight: bold;
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  top: -70px;
+  color: #fff;
+  font-size: 17px;
 }
 
 .profile-card .profile-name p {
-    font-weight: 600;
-    font-size: 3.5rem;
-    letter-spacing: 1.5px;
-    color: white;
-    text-shadow: rgb(255, 68, 0) 2px 6px;
-    
+  font-weight: 600;
+  font-size: 3.5rem;
+  letter-spacing: 1.5px;
+  color: white;
+  text-shadow: rgb(255, 68, 0) 2px 6px;
 }
 
 .profile-card .profile-description {
-    color: #777;
-    font-size: 12px;
-    padding: 10px;
-    
+  color: #777;
+  font-size: 12px;
+  padding: 10px;
 }
 
 .profile-card .profile-overview {
-    padding: 15px 0px;
-    
+  padding: 15px 0px;
 }
 
 .profile-card .profile-overview p {
-    font-size: 10px;
-    font-weight: 600;
-    color: #777;
+  font-size: 10px;
+  font-weight: 600;
+  color: #777;
 }
 
 .profile-card .profile-overview h4 {
-    color: #273751;
-    font-weight: bold;
-    
+  color: #273751;
+  font-weight: bold;
 }
 
 .profile-card .profile-content::before {
-    content: "";
-    position: absolute;
-    height: 20px;
-    top: -10px;
-    left: 0px;
-    right: 0px;
-    background-color: #FFF;
-    z-index: 0;
-    transform: skewY(3deg);
-    
+  content: "";
+  position: absolute;
+  height: 20px;
+  top: -10px;
+  left: 0px;
+  right: 0px;
+  background-color: #fff;
+  z-index: 0;
+  transform: skewY(3deg);
 }
 
 /* .profile-card:hover img {
@@ -178,52 +164,56 @@ main{
     filter: brightness(110%);
 } */
 .profile-card img {
-    --s: 300px;   /* the size of the image */
-    --b: 8px;     /* the border thickness*/
-    --g: 14px;    /* the gap */
-    --c: #4ECDC4; /* the color */
-    
-    width: var(--s);
-    aspect-ratio: 1;
-    outline: calc(var(--s)/2) solid #0009;
-    outline-offset: calc(var(--s)/-2);
-    cursor: pointer;
-    transition: 0.3s;
-  }
-  .profile-card img:hover {
-    outline: var(--b) solid var(--c);
-    outline-offset: var(--g);
-  }
+  --s: 300px; /* the size of the image */
+  --b: 8px; /* the border thickness*/
+  --g: 14px; /* the gap */
+  --c: #4ecdc4; /* the color */
+
+  width: var(--s);
+  aspect-ratio: 1;
+  outline: calc(var(--s) / 2) solid #0009;
+  outline-offset: calc(var(--s) / -2);
+  cursor: pointer;
+  transition: 0.3s;
+}
+.profile-card img:hover {
+  outline: var(--b) solid var(--c);
+  outline-offset: var(--g);
+}
 
 /*Footer*/
-footer{
-    padding-top: 40px;
-    background: black;
+footer {
+  padding-top: 40px;
+  background: black;
 }
 
-footer span{
-    margin: 30px 0 10px 0;
-    font-weight: 300;
-    font-size: 18px;
-    color: rgb(181, 181, 181);
+footer span {
+  margin: 30px 0 10px 0;
+  font-weight: 300;
+  font-size: 18px;
+  color: rgb(181, 181, 181);
 }
 
-.footer-content{
-    max-width: 1450px;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.footer-content {
+  max-width: 1450px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 /*Modal*/
-#add-animal{
-    background: var(--primary);
-    color: white;
+#add-animal {
+  background: var(--primary);
+  color: white;
 }
 
-#add-animal:hover{
-
-    background: #609fd2;
+#add-animal:hover {
+  background: #609fd2;
 }
-
+.form-control {
+  margin-bottom: 10px;
+}
+.form-label {
+  margin-top: 10px;
+}
