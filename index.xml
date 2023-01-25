@@ -1,13 +1,14 @@
 <mammals>
     <species>
         <name>The fox</name>
-        <img>https://d23.com/app/uploads/2015/07/tod-1180x6001-1180x600.jpg</img>
+        <img>https://radiodisneyclub.fr/wp-content/uploads/2015/12/3053061241_1_3_Tp1g4dCF-1280x720.jpg</img>
         <description>Foxes are small to medium-sized, omnivorous mammals belonging to several genera of the family Canidae. They have a flattened skull, upright, triangular ears, a pointed, slightly upturned snout, and a long bushy tail (or brush).</description>
+        <height unit="cm">45-90</height>
         <weight unit="cm">35-50</weight>
-        <size unit="cm">45-90</size>
         <speed unit="km/h">50</speed>
-        <lifespan unit="years">3-4</lifespan>
-        <dailysleep unit="years">3-4</dailysleep>
+        <lifeSpan unit="years">3-4</lifeSpan>
+        <gestationPeriod unit="days">58</gestationPeriod>
+        <dailySleep unit="h">10</dailySleep>
         <location>
             <area>Europe</area>
             <area>North America</area>
@@ -18,23 +19,23 @@
             <name>Nick Wilde</name>
         </famousAnimal>
     </species>
+
     <species>
-        <name>The fox</name>
-        <img>https://d23.com/app/uploads/2015/07/tod-1180x6001-1180x600.jpg</img>
-        <description>Foxes are small to medium-sized, omnivorous mammals belonging to several genera of the family Canidae. They have a flattened skull, upright, triangular ears, a pointed, slightly upturned snout, and a long bushy tail (or brush).</description>
-        <weight unit="cm">35-50</weight>
-        <size unit="cm">45-90</size>
-        <speed unit="km/h">50</speed>
-        <lifespan unit="years">3-4</lifespan>
-        <dailysleep unit="years">3-4</dailysleep>
+        <name>The Lion</name>
+        <img>https://disney-planet.fr/wp-content/uploads/2015/01/simba-personnage-le-roi-lion-13.jpg</img>
+        <description>Lions have strong, compact bodies and powerful forelegs, teeth and jaws for pulling down and killing prey. Their coats are yellow-gold, and adult males have shaggy manes that range in color from blond to reddish-brown to black. The length and color of a lion's mane is likely determined by age, genetics and hormones.</description>
+        <height unit="cm">90-120</height> 
+        <weight unit="cm">130-250</weight>
+        <speed unit="km/h">80</speed>
+        <lifeSpan unit="years">8-16</lifeSpan>
+        <gestationPeriod unit="days">110</gestationPeriod>
+        <dailySleep unit="h">15-20</dailySleep>
         <location>
-            <area>Europe</area>
-            <area>North America</area>
+            <area>Africa</area>
             <area>Asia</area>
         </location>
         <famousAnimal>
-            <name>Tod</name>
-            <name>Nick Wilde</name>
+            <name>Simba</name>
         </famousAnimal>
     </species>
 </mammals>
