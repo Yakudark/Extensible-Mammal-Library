@@ -1,0 +1,11 @@
+.card:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  box-shadow: 4px 4px 1px 0.5px #7dabd1b9; 
+}
+
+img {
+  height: 150px;
+  margin-top: 10px;
+  
+}
