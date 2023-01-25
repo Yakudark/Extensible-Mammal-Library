@@ -198,11 +198,6 @@ main{
   z-index: 0;
   transform: skewY(3deg);
 }
-
-/* .profile-card:hover img {
-    transform: rotate(5deg) scale(1.1, 1.1);
-    filter: brightness(110%);
-} */
 .profile-card img {
   --s: 300px; /* the size of the image */
   --b: 8px; /* the border thickness*/
@@ -219,6 +214,8 @@ main{
 .profile-card img:hover {
   outline: var(--b) solid var(--c);
   outline-offset: var(--g);
+  transform: rotate(5deg) scale(1.1, 1.1);
+    filter: brightness(110%);
 }
 
 /*Footer*/
@@ -260,3 +257,12 @@ footer span {
   margin-top: 10px;
 
 }
+/* -----------------Follow cursor----------------- */
+#image_suit_souris{
+  position:absolute;
+  display:block;
+  z-index:5;
+  width: 60px;
+  height: 60px;
+}
+/* -----------------END Follow cursor----------------- */
