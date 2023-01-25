@@ -1,22 +1,20 @@
-// Créer un nouvel objet XMLHttpRequest
+    // Création et configuration d'un objet XML
 var xhttp = new XMLHttpRequest();
-
-// Configurer l'objet pour charger le fichier XML
 xhttp.open("GET", "./index.xml", true);
 xhttp.send();
 
-// Fonction à exécuter lorsque le fichier XML est chargé
+ // Code à exécuter une fois le fichier XML est chargé*
 xhttp.onreadystatechange = function() {
   if (this.readyState == 4 && this.status == 200) {
-    // Récupérer le contenu XML
+    // Récupération de la réponse contenant les données XML
     const xml = this.responseXML;
     console.log(xml)
 
-    // Utiliser les méthodes de l'objet DOM pour accéder aux données XML
+   // Manipulation du DOM pour récupérer aux données XML
+    // et les afficher dans les cards
     const mamals = xml.children[0]
-    console.log(mamals)
     const species = mamals.children
-    console.log(species)
+
     for (i = 0; i < species.length; i++) {
       document.querySelector('main').innerHTML += "<br>"
 
@@ -34,8 +32,7 @@ xhttp.onreadystatechange = function() {
         </div>
       </div>`
 
-        //   document.querySelector('main').innerHTML +=  `<li>${species[i].children[j].localName} : ${species[i].children[j].innerHTML}</li>`
-
+      // Au clique, affichage des données de l'animal cliqués dans la sidebar
         const cards = document.querySelectorAll('.card')
         cards.forEach(card => {
             card.onclick = () => {
@@ -133,11 +130,6 @@ xhttp.onreadystatechange = function() {
     }
   } 
 };
-
-
-
-
-
 
 
 
