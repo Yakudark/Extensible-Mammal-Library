@@ -14,12 +14,8 @@
             <area>North America</area>
             <area>Asia</area>
         </location>
-        <famousAnimal>
-            <name>Tod</name>
-            <name>Nick Wilde</name>
-        </famousAnimal>
+        <famousAnimal> Tod </famousAnimal>
     </species>
-
     <species>
         <name>The Lion</name>
         <img>https://disney-planet.fr/wp-content/uploads/2015/01/simba-personnage-le-roi-lion-13.jpg</img>
@@ -34,8 +30,213 @@
             <area>Africa</area>
             <area>Asia</area>
         </location>
-        <famousAnimal>
-            <name>Simba</name>
-        </famousAnimal>
+        <famousAnimal>Simba</famousAnimal>
+    </species>
+        <species>
+        <name>The Lion</name>
+        <img>https://disney-planet.fr/wp-content/uploads/2015/01/simba-personnage-le-roi-lion-13.jpg</img>
+        <description>Lions have strong, compact bodies and powerful forelegs, teeth and jaws for pulling down and killing prey. Their coats are yellow-gold, and adult males have shaggy manes that range in color from blond to reddish-brown to black. The length and color of a lion's mane is likely determined by age, genetics and hormones.</description>
+        <height unit="cm">90-120</height> 
+        <weight unit="cm">130-250</weight>
+        <speed unit="km/h">80</speed>
+        <lifeSpan unit="years">8-16</lifeSpan>
+        <gestationPeriod unit="days">110</gestationPeriod>
+        <dailySleep unit="h">15-20</dailySleep>
+        <location>
+            <area>Africa</area>
+            <area>Asia</area>
+        </location>
+        <famousAnimal>Simba</famousAnimal>
+    </species>
+        <species>
+        <name>The Lion</name>
+        <img>https://disney-planet.fr/wp-content/uploads/2015/01/simba-personnage-le-roi-lion-13.jpg</img>
+        <description>Lions have strong, compact bodies and powerful forelegs, teeth and jaws for pulling down and killing prey. Their coats are yellow-gold, and adult males have shaggy manes that range in color from blond to reddish-brown to black. The length and color of a lion's mane is likely determined by age, genetics and hormones.</description>
+        <height unit="cm">90-120</height> 
+        <weight unit="cm">130-250</weight>
+        <speed unit="km/h">80</speed>
+        <lifeSpan unit="years">8-16</lifeSpan>
+        <gestationPeriod unit="days">110</gestationPeriod>
+        <dailySleep unit="h">15-20</dailySleep>
+        <location>
+            <area>Africa</area>
+            <area>Asia</area>
+        </location>
+        <famousAnimal>Simba</famousAnimal>
+    </species>
+        <species>
+        <name>The Lion</name>
+        <img>https://disney-planet.fr/wp-content/uploads/2015/01/simba-personnage-le-roi-lion-13.jpg</img>
+        <description>Lions have strong, compact bodies and powerful forelegs, teeth and jaws for pulling down and killing prey. Their coats are yellow-gold, and adult males have shaggy manes that range in color from blond to reddish-brown to black. The length and color of a lion's mane is likely determined by age, genetics and hormones.</description>
+        <height unit="cm">90-120</height> 
+        <weight unit="cm">130-250</weight>
+        <speed unit="km/h">80</speed>
+        <lifeSpan unit="years">8-16</lifeSpan>
+        <gestationPeriod unit="days">110</gestationPeriod>
+        <dailySleep unit="h">15-20</dailySleep>
+        <location>
+            <area>Africa</area>
+            <area>Asia</area>
+        </location>
+        <famousAnimal>Simba</famousAnimal>
+    </species>
+        <species>
+        <name>The Lion</name>
+        <img>https://disney-planet.fr/wp-content/uploads/2015/01/simba-personnage-le-roi-lion-13.jpg</img>
+        <description>Lions have strong, compact bodies and powerful forelegs, teeth and jaws for pulling down and killing prey. Their coats are yellow-gold, and adult males have shaggy manes that range in color from blond to reddish-brown to black. The length and color of a lion's mane is likely determined by age, genetics and hormones.</description>
+        <height unit="cm">90-120</height> 
+        <weight unit="cm">130-250</weight>
+        <speed unit="km/h">80</speed>
+        <lifeSpan unit="years">8-16</lifeSpan>
+        <gestationPeriod unit="days">110</gestationPeriod>
+        <dailySleep unit="h">15-20</dailySleep>
+        <location>
+            <area>Africa</area>
+            <area>Asia</area>
+        </location>
+        <famousAnimal>Simba</famousAnimal>
+    </species>
+        <species>
+        <name>The Lion</name>
+        <img>https://disney-planet.fr/wp-content/uploads/2015/01/simba-personnage-le-roi-lion-13.jpg</img>
+        <description>Lions have strong, compact bodies and powerful forelegs, teeth and jaws for pulling down and killing prey. Their coats are yellow-gold, and adult males have shaggy manes that range in color from blond to reddish-brown to black. The length and color of a lion's mane is likely determined by age, genetics and hormones.</description>
+        <height unit="cm">90-120</height> 
+        <weight unit="cm">130-250</weight>
+        <speed unit="km/h">80</speed>
+        <lifeSpan unit="years">8-16</lifeSpan>
+        <gestationPeriod unit="days">110</gestationPeriod>
+        <dailySleep unit="h">15-20</dailySleep>
+        <location>
+            <area>Africa</area>
+            <area>Asia</area>
+        </location>
+        <famousAnimal>Simba</famousAnimal>
+    </species>    <species>
+        <name>The Lion</name>
+        <img>https://disney-planet.fr/wp-content/uploads/2015/01/simba-personnage-le-roi-lion-13.jpg</img>
+        <description>Lions have strong, compact bodies and powerful forelegs, teeth and jaws for pulling down and killing prey. Their coats are yellow-gold, and adult males have shaggy manes that range in color from blond to reddish-brown to black. The length and color of a lion's mane is likely determined by age, genetics and hormones.</description>
+        <height unit="cm">90-120</height> 
+        <weight unit="cm">130-250</weight>
+        <speed unit="km/h">80</speed>
+        <lifeSpan unit="years">8-16</lifeSpan>
+        <gestationPeriod unit="days">110</gestationPeriod>
+        <dailySleep unit="h">15-20</dailySleep>
+        <location>
+            <area>Africa</area>
+            <area>Asia</area>
+        </location>
+        <famousAnimal>Simba</famousAnimal>
+    </species>
+        <species>
+        <name>The Lion</name>
+        <img>https://disney-planet.fr/wp-content/uploads/2015/01/simba-personnage-le-roi-lion-13.jpg</img>
+        <description>Lions have strong, compact bodies and powerful forelegs, teeth and jaws for pulling down and killing prey. Their coats are yellow-gold, and adult males have shaggy manes that range in color from blond to reddish-brown to black. The length and color of a lion's mane is likely determined by age, genetics and hormones.</description>
+        <height unit="cm">90-120</height> 
+        <weight unit="cm">130-250</weight>
+        <speed unit="km/h">80</speed>
+        <lifeSpan unit="years">8-16</lifeSpan>
+        <gestationPeriod unit="days">110</gestationPeriod>
+        <dailySleep unit="h">15-20</dailySleep>
+        <location>
+            <area>Africa</area>
+            <area>Asia</area>
+        </location>
+        <famousAnimal>Simba</famousAnimal>
+    </species>
+        <species>
+        <name>The Lion</name>
+        <img>https://disney-planet.fr/wp-content/uploads/2015/01/simba-personnage-le-roi-lion-13.jpg</img>
+        <description>Lions have strong, compact bodies and powerful forelegs, teeth and jaws for pulling down and killing prey. Their coats are yellow-gold, and adult males have shaggy manes that range in color from blond to reddish-brown to black. The length and color of a lion's mane is likely determined by age, genetics and hormones.</description>
+        <height unit="cm">90-120</height> 
+        <weight unit="cm">130-250</weight>
+        <speed unit="km/h">80</speed>
+        <lifeSpan unit="years">8-16</lifeSpan>
+        <gestationPeriod unit="days">110</gestationPeriod>
+        <dailySleep unit="h">15-20</dailySleep>
+        <location>
+            <area>Africa</area>
+            <area>Asia</area>
+        </location>
+        <famousAnimal>Simba</famousAnimal>
+    </species>
+        <species>
+        <name>The Lion</name>
+        <img>https://disney-planet.fr/wp-content/uploads/2015/01/simba-personnage-le-roi-lion-13.jpg</img>
+        <description>Lions have strong, compact bodies and powerful forelegs, teeth and jaws for pulling down and killing prey. Their coats are yellow-gold, and adult males have shaggy manes that range in color from blond to reddish-brown to black. The length and color of a lion's mane is likely determined by age, genetics and hormones.</description>
+        <height unit="cm">90-120</height> 
+        <weight unit="cm">130-250</weight>
+        <speed unit="km/h">80</speed>
+        <lifeSpan unit="years">8-16</lifeSpan>
+        <gestationPeriod unit="days">110</gestationPeriod>
+        <dailySleep unit="h">15-20</dailySleep>
+        <location>
+            <area>Africa</area>
+            <area>Asia</area>
+        </location>
+        <famousAnimal>Simba</famousAnimal>
+    </species>
+        <species>
+        <name>The Lion</name>
+        <img>https://disney-planet.fr/wp-content/uploads/2015/01/simba-personnage-le-roi-lion-13.jpg</img>
+        <description>Lions have strong, compact bodies and powerful forelegs, teeth and jaws for pulling down and killing prey. Their coats are yellow-gold, and adult males have shaggy manes that range in color from blond to reddish-brown to black. The length and color of a lion's mane is likely determined by age, genetics and hormones.</description>
+        <height unit="cm">90-120</height> 
+        <weight unit="cm">130-250</weight>
+        <speed unit="km/h">80</speed>
+        <lifeSpan unit="years">8-16</lifeSpan>
+        <gestationPeriod unit="days">110</gestationPeriod>
+        <dailySleep unit="h">15-20</dailySleep>
+        <location>
+            <area>Africa</area>
+            <area>Asia</area>
+        </location>
+        <famousAnimal>Simba</famousAnimal>
+    </species>
+        <species>
+        <name>The Lion</name>
+        <img>https://disney-planet.fr/wp-content/uploads/2015/01/simba-personnage-le-roi-lion-13.jpg</img>
+        <description>Lions have strong, compact bodies and powerful forelegs, teeth and jaws for pulling down and killing prey. Their coats are yellow-gold, and adult males have shaggy manes that range in color from blond to reddish-brown to black. The length and color of a lion's mane is likely determined by age, genetics and hormones.</description>
+        <height unit="cm">90-120</height> 
+        <weight unit="cm">130-250</weight>
+        <speed unit="km/h">80</speed>
+        <lifeSpan unit="years">8-16</lifeSpan>
+        <gestationPeriod unit="days">110</gestationPeriod>
+        <dailySleep unit="h">15-20</dailySleep>
+        <location>
+            <area>Africa</area>
+            <area>Asia</area>
+        </location>
+        <famousAnimal>Simba</famousAnimal>
+    </species>
+        <species>
+        <name>The Lion</name>
+        <img>https://disney-planet.fr/wp-content/uploads/2015/01/simba-personnage-le-roi-lion-13.jpg</img>
+        <description>Lions have strong, compact bodies and powerful forelegs, teeth and jaws for pulling down and killing prey. Their coats are yellow-gold, and adult males have shaggy manes that range in color from blond to reddish-brown to black. The length and color of a lion's mane is likely determined by age, genetics and hormones.</description>
+        <height unit="cm">90-120</height> 
+        <weight unit="cm">130-250</weight>
+        <speed unit="km/h">80</speed>
+        <lifeSpan unit="years">8-16</lifeSpan>
+        <gestationPeriod unit="days">110</gestationPeriod>
+        <dailySleep unit="h">15-20</dailySleep>
+        <location>
+            <area>Africa</area>
+            <area>Asia</area>
+        </location>
+        <famousAnimal>Simba</famousAnimal>
+    </species>
+        <species>
+        <name>The Lion</name>
+        <img>https://disney-planet.fr/wp-content/uploads/2015/01/simba-personnage-le-roi-lion-13.jpg</img>
+        <description>Lions have strong, compact bodies and powerful forelegs, teeth and jaws for pulling down and killing prey. Their coats are yellow-gold, and adult males have shaggy manes that range in color from blond to reddish-brown to black. The length and color of a lion's mane is likely determined by age, genetics and hormones.</description>
+        <height unit="cm">90-120</height> 
+        <weight unit="cm">130-250</weight>
+        <speed unit="km/h">80</speed>
+        <lifeSpan unit="years">8-16</lifeSpan>
+        <gestationPeriod unit="days">110</gestationPeriod>
+        <dailySleep unit="h">15-20</dailySleep>
+        <location>
+            <area>Africa</area>
+            <area>Asia</area>
+        </location>
+        <famousAnimal>Simba</famousAnimal>
     </species>
 </mammals>

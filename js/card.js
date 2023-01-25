@@ -1,4 +1,4 @@
-    // Création et configuration d'un objet XML
+// Création et configuration d'un objet XML
 var xhttp = new XMLHttpRequest();
 xhttp.open("GET", "./index.xml", true);
 xhttp.send();
@@ -8,7 +8,6 @@ xhttp.onreadystatechange = function() {
   if (this.readyState == 4 && this.status == 200) {
     // Récupération de la réponse contenant les données XML
     const xml = this.responseXML;
-    console.log(xml)
 
    // Manipulation du DOM pour récupérer aux données XML
     // et les afficher dans les cards
@@ -36,7 +35,6 @@ xhttp.onreadystatechange = function() {
         const cards = document.querySelectorAll('.card')
         cards.forEach(card => {
             card.onclick = () => {
-              console.log(card)
               const nameOnCard = card.children[1].children[0].textContent
               
               for (let j = 0; j < species.length; j++) {

@@ -16,8 +16,11 @@ body {
     margin: 0;
     background: var(--background);
     font-family: 'Cutiemolly', sans-serif;
+    
 }
-
+.modal{
+  min-width: 370px;
+}
 *{
     font-family: 'Londrina Solid', cursive;
     box-sizing: border-box;
@@ -67,8 +70,6 @@ header a:hover {
 }
 
 /*Main*/
-
-
 main{
     min-height: 850px;
     display: flex;
@@ -224,13 +225,13 @@ main{
 /*Footer*/
 
 footer{
-    padding-top: 40px;
+    padding-top: 20px;
     background: black;
     margin-top: 50px;
 }
 
 footer span {
-  margin: 30px 0 10px 0;
+  margin: 10px 0 10px 0;
   font-weight: 300;
   font-size: 18px;
   color: rgb(181, 181, 181);
@@ -245,18 +246,74 @@ footer span {
 }
 
 /*Modal*/
+.modal-content{
+  background: var(--background) !important;
+}
+
 #add-animal {
   background: var(--primary);
   color: white;
+  width: 25%;
+  margin: 20px 0;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: 500ms;
 }
 
 #add-animal:hover {
+  transform: translateX(-50%) scale(1.07);
+  filter: brightness(1.1);
+}
+.modal-header{
+  color: var(--primary);
+  background: white;
+}
+
+.modal-header h1{
+  position: relative;
+  font-size: 30px !important;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.modal-footer{
+  color: white;
   background: #609fd2;
 }
+
+
 .form-control {
-  margin-bottom: 10px;
+  margin-bottom: 10px; 
 }
 .form-label {
   margin-top: 10px;
+  font-size: 18px;
+}
 
+.checkbox label{
+  color: var(--primary);
+}
+
+textarea{
+  min-height: 125px !important;
+  max-height: 125px !important;
+}
+
+.col input, textarea {
+  font-family: sans-serif !important;
+  border: none;
+  box-shadow: 0 0px 5px #c4e4fe;
+}
+
+select{
+  
+  background: white;
+  border: 0;
+  border-radius: 5px;
+  box-shadow: 0 0px 5px #c4e4fe;
+}
+
+option{
+  font-family: sans-serif !important;
 }
