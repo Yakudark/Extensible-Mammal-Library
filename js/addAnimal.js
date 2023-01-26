@@ -1,3 +1,4 @@
+
 const form = document.querySelector('.modal form')
   form.onsubmit = (e) => {
     e.preventDefault()
@@ -19,11 +20,11 @@ const form = document.querySelector('.modal form')
 
     const gestationPeriod = form[7].value
 
-    let location = ''
+  let location = ``
     const locationTab = form.querySelectorAll('input[name="location"]')
     locationTab.forEach(el => {
       if(el.checked === true){
-        location += `<area>${el.value}</area`
+        location += `<area>${el.value}</area>`
       }
     });
 
@@ -32,22 +33,17 @@ const form = document.querySelector('.modal form')
     const dailySleep = form[15].value
 
 
-    let xhttp = new XMLHttpRequest();
-    xhttp.open("GET", "./index.xml", true);
-    xhttp.send();
+    let xhr = new XMLHttpRequest();
+    xhr.open("GET", "./index.xml", true);
+    xhr.send();
     
      
-    xhttp.onreadystatechange = function() {
+    xhr.onreadystatechange = function() {
       if (this.readyState == 4 && this.status == 200) {
-        let blob = new Blob([xhttp.toString()], {type: "text/xml"});
-        let file = new File([blob], "./../index.xml", {type: "text/xml"});
-       
-        let url = URL.createObjectURL(blob);
         
         const xml = this.responseXML;
-        const root = xml.querySelectorAll('root')
-        console.log(root)
-        
+        const root = xml.querySelector('root')
+     
         root.innerHTML += `<species>
         <name>${animalName}</name>
         <img>${img}</img> 
@@ -60,7 +56,10 @@ const form = document.querySelector('.modal form')
         <dailySleep unit="h">${dailySleep}</dailySleep>
         <location>${location}</location>
         <famousAnimal>${famousAnimal}</famousAnimal>
-        </species>`;            
+        </species>`;   
+
+        console.log(xml)
+        
           }
       }
 

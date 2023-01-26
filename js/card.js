@@ -1,10 +1,10 @@
 // Création et configuration d'un objet XML
-var xhttp = new XMLHttpRequest();
-xhttp.open("GET", "./index.xml", true);
-xhttp.send();
+var xhr = new XMLHttpRequest();
+xhr.open("GET", "./index.xml", true);
+xhr.send();
 
  // Code à exécuter une fois le fichier XML est chargé*
-xhttp.onreadystatechange = function() {
+xhr.onreadystatechange = function() {
   if (this.readyState == 4 && this.status == 200) {
     // Récupération de la réponse contenant les données XML
     const xml = this.responseXML;
