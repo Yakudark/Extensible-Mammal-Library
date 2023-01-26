@@ -16,8 +16,11 @@ body {
     margin: 0;
     background: var(--background);
     font-family: 'Cutiemolly', sans-serif;
+    min-width: 370px;
 }
-
+.modal{
+  min-width: 370px;
+}
 *{
     font-family: 'Londrina Solid', cursive;
     box-sizing: border-box;
@@ -25,12 +28,11 @@ body {
 
 /*Header*/
 header{
- 
     position: sticky;
     top:0;
     z-index: 5;
-     background: var(--primary);
-
+    background: var(--primary);
+    min-width: 370px;
 }
 
 .header-content {
@@ -39,6 +41,7 @@ header{
   display: flex;
   justify-content: space-between;
   align-items: center;
+  
 }
 
 header a {
@@ -65,9 +68,129 @@ header a:hover {
   color: #fff;
   padding: 0 15px;
 }
+/* menu toggler ---------------------------------------------*/
+.menu-toggler {
+  position: absolute;
+  display: block;
+  top:0;
+  bottom:0;
+  right:0;
+  left:90%;
+  margin:auto;
+  width:40px;
+  height:40px;
+  z-index:2;
+  opacity:0;
+  cursor:pointer;
+}
+#menu-toggler:hover + label,
+#menu-toggler:hover + label:before,
+#menu-toggler:hover + label:after{
+  background: black;
+}
+#menu-toggler:checked + label {
+  background: transparent;
+}
+#menu-toggler:checked + label:before {
+  transform: rotate(45deg) translateY(-15px) translateX(-15px);
+}
+#menu-toggler:checked + label:after {
+  transform: rotate(-45deg);
+}
+#menu-toggler:checked ~ ul .menu-item { 
+  opacity: 1;
+}
+#menu-toggler:checked ~ ul .menu-item:nth-child(1) {
+  transform: rotate(0deg) translate(-110px);
+}
+#menu-toggler:checked ~ ul .menu-item:nth-child(2) {
+  transform: rotate(315deg) translateX(-110px);
+}
 
+#menu-toggler:checked ~ ul .menu-item a {
+  pointer-events:auto;
+}
+#menu-toggler + label {
+  width: 40px;
+  height: 5px;
+  display: block;
+  z-index: 1;
+  border-radius: 2.5px;
+  background: rgba(230, 239, 250, 0.9);
+  transition: transform 0.5s top 0.5s;
+  position: absolute;
+  display: block;
+  top: 0;
+  bottom: 0;
+  left: 90%;
+  right: 0;
+  margin: auto;
+}
+#menu-toggler + label:before,
+#menu-toggler + label:after {
+  width: 40px;
+  height: 5px;
+  display: block;
+  z-index: 1;
+  border-radius: 2.5px;
+  background: rgba(255, 255, 255, 0.7);
+  transition: transform 0.5s top 0.5s;
+  content: "";
+  position: absolute;
+  display: block;
+  left: 0;
+}
+#menu-toggler + label:before {
+  top: 10px;
+}
+#menu-toggler + label:after {
+  top: -10px;
+}
+.menu-item:nth-child(1) a {
+  transform: rotate(0deg);
+}
+.menu-item:nth-child(2) a {
+  transform: rotate(45deg);
+}
+
+.menu-item {
+  position: absolute;
+  display: block;
+  top: 0;
+  bottom: 0;
+  left: 90%;
+  right: 0;
+  margin: auto;
+  width: 60px;
+  height: 60px;
+  opacity: 0;
+  transition: 0.5s;
+  
+}
+.menu-item a {
+  display: block;
+  width: inherit;
+  height: inherit;
+  line-height: 30px;
+  color: var(--font);
+  background: var(--primary);
+  border-radius: 50%;
+  border: 1px solid var(--card);
+  text-align: center;
+  text-decoration: none;
+  font-size: 30px;
+  pointer-events: none;
+  transition: 0.2s;
+}
+.menu-item a:hover {
+  box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.3);
+  color: var(--card);
+  background: var(--shadow);
+  font-size: 30px;
+  
+}
+/* ------------end menu toggler -------------- */
 /*Main*/
-
 
 main{
     min-height: 850px;
@@ -94,14 +217,6 @@ main{
   }
 
 /*sidebar*/
-
-/* -----------------Follow cursor----------------- */
-#paw-simple {
-  width: 50px;
-  height: 50px;
-  position: absolute;
-}
-/* -----------------END Follow cursor----------------- */
 
 /* -------------------Main cards vianney-------------------------- */
 .sidebar-section{
@@ -222,15 +337,15 @@ main{
 
 footer{
     padding-top: 40px;
-    background: black;
-    margin-top: 50px;
+    background: var(--primary);
+    margin-top: 69px;
 }
 
 footer span {
   margin: 30px 0 10px 0;
   font-weight: 300;
   font-size: 18px;
-  color: rgb(181, 181, 181);
+  color: var(--font);
 }
 
 .footer-content {
@@ -242,12 +357,38 @@ footer span {
 }
 
 /*Modal*/
+.modal-content{
+  background: var(--background) !important;
+}
 #add-animal {
   background: var(--primary);
   color: white;
+  width: 25%;
+  margin: 20px 0;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: 500ms;
 }
 
 #add-animal:hover {
+  transform: translateX(-50%) scale(1.07);
+  filter: brightness(1.1);
+}
+.modal-header{
+  color: var(--primary);
+  background: white;
+}
+
+.modal-header h1{
+  position: relative;
+  font-size: 30px !important;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.modal-footer{
+  color: white;
   background: #609fd2;
 }
 .form-control {
@@ -255,14 +396,80 @@ footer span {
 }
 .form-label {
   margin-top: 10px;
+  font-size: 18px;
+}
+.checkbox label{
+  color: var(--primary);
+}
 
+textarea{
+  min-height: 125px !important;
+  max-height: 125px !important;
+}
+
+.col input, textarea {
+  font-family: sans-serif !important;
+  border: none;
+  box-shadow: 0 0px 5px #c4e4fe;
+}
+
+select{
+  
+  background: white;
+  border: 0;
+  border-radius: 5px;
+  box-shadow: 0 0px 5px #c4e4fe;
+}
+
+option{
+  font-family: sans-serif !important;
+}
+
+/* RESPONSIVE */
+
+@media(max-width: 768px){
+
+  header a{
+    padding: 2%;
+    font-size: 18px;
+  }
+
+  .sidebar-section{
+    min-width: 370px;
+   position: fixed;
+   left: 50%;
+   transform:  translate(-50%);
+   z-index: 10;
+   background-color: rgba(168, 168, 168, 0.705);
+   width: 100%;
+   height: 100%;
+  }
+
+  .profile-card .profile-content::before {
+    transform: skewY(1.5deg);
+  }
+
+  .main-card{
+    margin: 3%;
+
+  }
+  
+  .profile-card{
+    max-width: none;
+    width: 100%;
+  }
+
+  .profile-card img{
+    --s: 100%;
+    object-fit: cover;
+  }
 }
 /* -----------------Follow cursor----------------- */
 #image_suit_souris{
   position:absolute;
   display:block;
   z-index:5;
-  width: 60px;
-  height: 60px;
+  width: 40px;
+  height: 40px;
 }
 /* -----------------END Follow cursor----------------- */

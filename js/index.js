@@ -14,3 +14,6 @@ function suitsouris(evenement) {
 }
 
 //   END follow cursor-----------------------
+// stop animation menu-toggler
+document.getElementById("menu-toggler").checked = false;
+// stop animation menu-toggler

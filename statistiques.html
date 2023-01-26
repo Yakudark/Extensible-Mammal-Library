@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="statistiques.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="style.css">
+  <title>Statistiques</title>
+</head>
+<header>
+  <div class="header-content">
+    <div class="logo">
+      <span>Zoopedia</span>
+    </div>
+    <nav class="menu">
+      <input checked="checked" id="menu-toggler" class="menu-toggler" type="checkbox">
+      <label for="menu-toggler"></label>
+      <ul>
+        <li class="menu-item">
+          <a class="fa-solid fa-house-user" href="/index.html"></a>
+        <li class="menu-item">
+          <a class="fa-solid fa-chart-line" href="/statistiques.html"></a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<body>
+  <div class="chart-content">
+    <canvas id="chart"></canvas>
+  </div>
+  <!-- Cursor change -->
+<img src="https://www.icone-gif.com/gif/smileys/animaux/icon-furet2.gif" alt="Image qui suit la souris" id="image_suit_souris" />
+<!-- fin Cursor change --> 
+<!-- Footer -->
+<footer>
+  <div class="footer-content">
+      <div class="logo">Zoopedia</div>
+      <span>Zoopedia © 2021-2023</span>
+  </div>
+</footer>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"></script>
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.2.0/chart.min.js" integrity="sha512-qKyIokLnyh6oSnWsc5h21uwMAQtljqMZZT17CIMXuCQNIfFSFF4tJdMOaJHL9fQdJUANid6OB6DRR0zdHrbWAw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
+<script src="/js/statistiques.js"></script>
+</html>
