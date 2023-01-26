@@ -16,7 +16,7 @@ body {
     margin: 0;
     background: var(--background);
     font-family: 'Cutiemolly', sans-serif;
-    
+    min-width: 370px;
 }
 .modal{
   min-width: 370px;
@@ -28,12 +28,11 @@ body {
 
 /*Header*/
 header{
- 
     position: sticky;
     top:0;
     z-index: 5;
      background: var(--primary);
-
+     min-width: 370px;
 }
 
 .header-content {
@@ -315,4 +314,44 @@ select{
 
 option{
   font-family: sans-serif !important;
+}
+
+/* RESPONSIVE */
+
+@media(max-width: 768px){
+
+  header a{
+    padding: 2%;
+    font-size: 18px;
+  }
+
+  .sidebar-section{
+    min-width: 370px;
+   position: fixed;
+   left: 50%;
+   transform:  translate(-50%);
+   z-index: 10;
+   background-color: rgba(168, 168, 168, 0.705);
+   width: 100%;
+   height: 100%;
+  }
+
+  .profile-card .profile-content::before {
+    transform: skewY(1.5deg);
+  }
+
+  .main-card{
+    margin: 3%;
+
+  }
+  
+  .profile-card{
+    max-width: none;
+    width: 100%;
+  }
+
+  .profile-card img{
+    --s: 100%;
+    object-fit: cover;
+  }
 }

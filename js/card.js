@@ -11,14 +11,14 @@ xhttp.onreadystatechange = function() {
 
    // Manipulation du DOM pour récupérer aux données XML
     // et les afficher dans les cards
-    const mamals = xml.children[0]
-    const species = mamals.children
 
-    for (i = 0; i < species.length; i++) {
+    const speciesTab = xml.querySelectorAll('species')
+
+    for (i = 0; i < speciesTab.length; i++) {
       document.querySelector('main').innerHTML += "<br>"
 
-        const animalName = species[i].children[0].textContent
-        const imgUrl = species[i].children[1].textContent
+        const animalName = speciesTab[i].children[0].textContent
+        const imgUrl = speciesTab[i].children[1].textContent
         
         const containerCard = document.querySelector('.animal-list')
         containerCard.innerHTML += `<div class="card">
@@ -37,21 +37,21 @@ xhttp.onreadystatechange = function() {
             card.onclick = () => {
               const nameOnCard = card.children[1].children[0].textContent
               
-              for (let j = 0; j < species.length; j++) {
-                const storedName = species[j].children[0].textContent
+              for (let j = 0; j < speciesTab.length; j++) {
+                const storedName = speciesTab[j].children[0].textContent
 
               if(storedName == nameOnCard){
                 
-                const img = species[j].querySelector('img').textContent
-                const description = species[j].querySelector('description').textContent
-                const height = species[j].querySelector('height').textContent
-                const weight = species[j].querySelector('weight').textContent
-                const speed = species[j].querySelector('speed').textContent
-                const lifeSpan = species[j].querySelector('lifeSpan').textContent
-                const gestationPeriod = species[j].querySelector('gestationPeriod').textContent
-                const dailySleep = species[j].querySelector('dailySleep').textContent
-                const location = species[j].querySelector('location').textContent
-                const famousAnimal = species[j].querySelector('famousAnimal').textContent
+                const img = speciesTab[j].querySelector('img').textContent
+                const description = speciesTab[j].querySelector('description').textContent
+                const height = speciesTab[j].querySelector('height').textContent
+                const weight = speciesTab[j].querySelector('weight').textContent
+                const speed = speciesTab[j].querySelector('speed').textContent
+                const lifeSpan = speciesTab[j].querySelector('lifeSpan').textContent
+                const gestationPeriod = speciesTab[j].querySelector('gestationPeriod').textContent
+                const dailySleep = speciesTab[j].querySelector('dailySleep').textContent
+                const location = speciesTab[j].querySelector('location').textContent
+                const famousAnimal = speciesTab[j].querySelector('famousAnimal').textContent
 
 
                 const containerSideBar = document.querySelector('.sidebar-section')
