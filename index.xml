@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="iso-8859-1"?>
+
 <root>
     <species>
         <name>Fox</name>
@@ -15,8 +16,9 @@
             <area>North America</area>
             <area>Asia</area>
         </location>
-        <famousAnimal>Tod</famousAnimal>
+        <famousAnimal> Tod </famousAnimal>
     </species>
+
     <species>
         <name>Lion</name>
         <img>https://disney-planet.fr/wp-content/uploads/2015/01/simba-personnage-le-roi-lion-13.jpg</img>
@@ -33,6 +35,7 @@
         </location>
         <famousAnimal>Simba</famousAnimal>
     </species>
+
     <species>
         <name>Warthog</name>
         <img>https://disney-planet.fr/wp-content/uploads/2015/01/pumba-personnage-le-roi-lion-09.jpg</img>
@@ -48,4 +51,5 @@
         </location>
         <famousAnimal>Pumbaa</famousAnimal>
     </species>
+
 </root>
