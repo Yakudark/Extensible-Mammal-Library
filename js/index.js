@@ -17,3 +17,11 @@ function suitsouris(evenement) {
 // stop animation menu-toggler
 document.getElementById("menu-toggler").checked = false;
 // stop animation menu-toggler
+
+// Modal Statistiques----------------------------
+const myModal = document.getElementById('modal_statistique')
+const myInput = document.getElementById('stats')
+
+myModal.addEventListener('shown.bs.modal', () => {
+  myInput.focus()
+})

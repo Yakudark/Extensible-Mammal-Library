@@ -12,9 +12,11 @@ function parseXML(xml) {
     var species = xmlDoc.getElementsByTagName("species");
     var animals = [];
     var speeds = [];
+    var heights = [];
     for (var i = 0; i < species.length; i++) {
         animals.push(species[i].getElementsByTagName("name")[0].childNodes[0].nodeValue);
         speeds.push(species[i].getElementsByTagName("speed")[0].childNodes[0].nodeValue);
+        heights.push(species[i].getElementsByTagName("height")[0].childNodes[0].nodeValue);
     }
 
     var ctx = document.getElementById("chart").getContext("2d");
@@ -28,14 +30,21 @@ function parseXML(xml) {
                 backgroundColor: "rgba(75, 192, 192, 0.2)",
                 borderColor: "rgba(75, 192, 192, 1)",
                 borderWidth: 1
+            },
+            {
+                label:'height (cm)',
+                data: heights,
+                backgroundColor: "rgba(255, 99, 132, 0.2)",
+                borderColor: "rgba(255, 99, 132, 1)",
+                borderWidth: 1
             }]
         },
         options: {
             scales: {
                 yAxes: [{
                     ticks: {
-                    beginAtZero: true,
-                }
+                        beginAtZero: true
+                    }
                 }]
             }
         }
