@@ -1,10 +1,11 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
 <root>
     <species>
-        <name>The fox</name>
+        <name>Fox</name>
         <img>https://radiodisneyclub.fr/wp-content/uploads/2015/12/3053061241_1_3_Tp1g4dCF-1280x720.jpg</img>
         <description>Foxes are small to medium-sized, omnivorous mammals belonging to several genera of the family Canidae. They have a flattened skull, upright, triangular ears, a pointed, slightly upturned snout, and a long bushy tail (or brush).</description>
         <height unit="cm">45-90</height>
-        <weight unit="cm">35-50</weight>
+        <weight unit="kg">35-50</weight>
         <speed unit="km/h">50</speed>
         <lifeSpan unit="years">3-4</lifeSpan>
         <gestationPeriod unit="days">58</gestationPeriod>
@@ -14,14 +15,14 @@
             <area>North America</area>
             <area>Asia</area>
         </location>
-        <famousAnimal> Tod </famousAnimal>
+        <famousAnimal>Tod</famousAnimal>
     </species>
     <species>
-        <name>The Lion</name>
+        <name>Lion</name>
         <img>https://disney-planet.fr/wp-content/uploads/2015/01/simba-personnage-le-roi-lion-13.jpg</img>
         <description>Lions have strong, compact bodies and powerful forelegs, teeth and jaws for pulling down and killing prey. Their coats are yellow-gold, and adult males have shaggy manes that range in color from blond to reddish-brown to black. The length and color of a lion's mane is likely determined by age, genetics and hormones.</description>
         <height unit="cm">90-120</height> 
-        <weight unit="cm">130-250</weight>
+        <weight unit="kg">130-250</weight>
         <speed unit="km/h">80</speed>
         <lifeSpan unit="years">8-16</lifeSpan>
         <gestationPeriod unit="days">110</gestationPeriod>
@@ -33,141 +34,18 @@
         <famousAnimal>Simba</famousAnimal>
     </species>
     <species>
-        <name>The fox</name>
-        <img>https://radiodisneyclub.fr/wp-content/uploads/2015/12/3053061241_1_3_Tp1g4dCF-1280x720.jpg</img>
-        <description>Foxes are small to medium-sized, omnivorous mammals belonging to several genera of the family Canidae. They have a flattened skull, upright, triangular ears, a pointed, slightly upturned snout, and a long bushy tail (or brush).</description>
-        <height unit="cm">45-90</height>
-        <weight unit="cm">35-50</weight>
+        <name>Warthog</name>
+        <img>https://disney-planet.fr/wp-content/uploads/2015/01/pumba-personnage-le-roi-lion-09.jpg</img>
+        <description>Warthogs are members of the same family as domestic pigs, but present a much different appearance. These sturdy hogs are not among the world's most aesthetically pleasing animals—their large, flat heads are covered with "warts," which are actually protective bumps. Warthogs also sport four sharp tusks. They are mostly bald, but they do have some sparse hair and a thicker mane on their backs.</description>
+        <height unit="cm">75</height> 
+        <weight unit="kg">100</weight>
         <speed unit="km/h">50</speed>
-        <lifeSpan unit="years">3-4</lifeSpan>
-        <gestationPeriod unit="days">58</gestationPeriod>
-        <dailySleep unit="h">10</dailySleep>
-        <location>
-            <area>Europe</area>
-            <area>North America</area>
-            <area>Asia</area>
-        </location>
-        <famousAnimal> Tod </famousAnimal>
-    </species>
-    <species>
-        <name>The Lion</name>
-        <img>https://disney-planet.fr/wp-content/uploads/2015/01/simba-personnage-le-roi-lion-13.jpg</img>
-        <description>Lions have strong, compact bodies and powerful forelegs, teeth and jaws for pulling down and killing prey. Their coats are yellow-gold, and adult males have shaggy manes that range in color from blond to reddish-brown to black. The length and color of a lion's mane is likely determined by age, genetics and hormones.</description>
-        <height unit="cm">90-120</height> 
-        <weight unit="cm">130-250</weight>
-        <speed unit="km/h">80</speed>
-        <lifeSpan unit="years">8-16</lifeSpan>
-        <gestationPeriod unit="days">110</gestationPeriod>
-        <dailySleep unit="h">15-20</dailySleep>
+        <lifeSpan unit="years">17</lifeSpan>
+        <gestationPeriod unit="days">165</gestationPeriod>
+        <dailySleep unit="h">5</dailySleep>
         <location>
             <area>Africa</area>
-            <area>Asia</area>
         </location>
-        <famousAnimal>Simba</famousAnimal>
+        <famousAnimal>Pumbaa</famousAnimal>
     </species>
-
-<species>
-        <name>The fox</name>
-        <img>https://radiodisneyclub.fr/wp-content/uploads/2015/12/3053061241_1_3_Tp1g4dCF-1280x720.jpg</img>
-        <description>Foxes are small to medium-sized, omnivorous mammals belonging to several genera of the family Canidae. They have a flattened skull, upright, triangular ears, a pointed, slightly upturned snout, and a long bushy tail (or brush).</description>
-        <height unit="cm">45-90</height>
-        <weight unit="cm">35-50</weight>
-        <speed unit="km/h">50</speed>
-        <lifeSpan unit="years">3-4</lifeSpan>
-        <gestationPeriod unit="days">58</gestationPeriod>
-        <dailySleep unit="h">10</dailySleep>
-        <location>
-            <area>Europe</area>
-            <area>North America</area>
-            <area>Asia</area>
-        </location>
-        <famousAnimal> Tod </famousAnimal>
-    </species>
-    <species>
-        <name>The Lion</name>
-        <img>https://disney-planet.fr/wp-content/uploads/2015/01/simba-personnage-le-roi-lion-13.jpg</img>
-        <description>Lions have strong, compact bodies and powerful forelegs, teeth and jaws for pulling down and killing prey. Their coats are yellow-gold, and adult males have shaggy manes that range in color from blond to reddish-brown to black. The length and color of a lion's mane is likely determined by age, genetics and hormones.</description>
-        <height unit="cm">90-120</height> 
-        <weight unit="cm">130-250</weight>
-        <speed unit="km/h">80</speed>
-        <lifeSpan unit="years">8-16</lifeSpan>
-        <gestationPeriod unit="days">110</gestationPeriod>
-        <dailySleep unit="h">15-20</dailySleep>
-        <location>
-            <area>Africa</area>
-            <area>Asia</area>
-        </location>
-        <famousAnimal>Simba</famousAnimal>
-    </species>
-
-<species>
-        <name>The fox</name>
-        <img>https://radiodisneyclub.fr/wp-content/uploads/2015/12/3053061241_1_3_Tp1g4dCF-1280x720.jpg</img>
-        <description>Foxes are small to medium-sized, omnivorous mammals belonging to several genera of the family Canidae. They have a flattened skull, upright, triangular ears, a pointed, slightly upturned snout, and a long bushy tail (or brush).</description>
-        <height unit="cm">45-90</height>
-        <weight unit="cm">35-50</weight>
-        <speed unit="km/h">50</speed>
-        <lifeSpan unit="years">3-4</lifeSpan>
-        <gestationPeriod unit="days">58</gestationPeriod>
-        <dailySleep unit="h">10</dailySleep>
-        <location>
-            <area>Europe</area>
-            <area>North America</area>
-            <area>Asia</area>
-        </location>
-        <famousAnimal> Tod </famousAnimal>
-    </species>
-    <species>
-        <name>The Lion</name>
-        <img>https://disney-planet.fr/wp-content/uploads/2015/01/simba-personnage-le-roi-lion-13.jpg</img>
-        <description>Lions have strong, compact bodies and powerful forelegs, teeth and jaws for pulling down and killing prey. Their coats are yellow-gold, and adult males have shaggy manes that range in color from blond to reddish-brown to black. The length and color of a lion's mane is likely determined by age, genetics and hormones.</description>
-        <height unit="cm">90-120</height> 
-        <weight unit="cm">130-250</weight>
-        <speed unit="km/h">80</speed>
-        <lifeSpan unit="years">8-16</lifeSpan>
-        <gestationPeriod unit="days">110</gestationPeriod>
-        <dailySleep unit="h">15-20</dailySleep>
-        <location>
-            <area>Africa</area>
-            <area>Asia</area>
-        </location>
-        <famousAnimal>Simba</famousAnimal>
-    </species>
-
-<species>
-        <name>The fox</name>
-        <img>https://radiodisneyclub.fr/wp-content/uploads/2015/12/3053061241_1_3_Tp1g4dCF-1280x720.jpg</img>
-        <description>Foxes are small to medium-sized, omnivorous mammals belonging to several genera of the family Canidae. They have a flattened skull, upright, triangular ears, a pointed, slightly upturned snout, and a long bushy tail (or brush).</description>
-        <height unit="cm">45-90</height>
-        <weight unit="cm">35-50</weight>
-        <speed unit="km/h">50</speed>
-        <lifeSpan unit="years">3-4</lifeSpan>
-        <gestationPeriod unit="days">58</gestationPeriod>
-        <dailySleep unit="h">10</dailySleep>
-        <location>
-            <area>Europe</area>
-            <area>North America</area>
-            <area>Asia</area>
-        </location>
-        <famousAnimal> Tod </famousAnimal>
-    </species>
-    <species>
-        <name>The Lion</name>
-        <img>https://disney-planet.fr/wp-content/uploads/2015/01/simba-personnage-le-roi-lion-13.jpg</img>
-        <description>Lions have strong, compact bodies and powerful forelegs, teeth and jaws for pulling down and killing prey. Their coats are yellow-gold, and adult males have shaggy manes that range in color from blond to reddish-brown to black. The length and color of a lion's mane is likely determined by age, genetics and hormones.</description>
-        <height unit="cm">90-120</height> 
-        <weight unit="cm">130-250</weight>
-        <speed unit="km/h">80</speed>
-        <lifeSpan unit="years">8-16</lifeSpan>
-        <gestationPeriod unit="days">110</gestationPeriod>
-        <dailySleep unit="h">15-20</dailySleep>
-        <location>
-            <area>Africa</area>
-            <area>Asia</area>
-        </location>
-        <famousAnimal>Simba</famousAnimal>
-    </species>
-
-
-
 </root>
