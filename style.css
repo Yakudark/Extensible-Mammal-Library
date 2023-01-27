@@ -31,7 +31,7 @@ body {
 header{
     position: sticky;
     top:0;
-    z-index: 5;
+    z-index: 12;
     background: var(--primary);
     min-width: 370px;
 
@@ -256,6 +256,7 @@ main{
     top: 100px;
     left: 5%;
     position: sticky;
+    z-index: 10;
 }
 .profile-card {
     max-width: 300px;
@@ -350,10 +351,179 @@ main{
   cursor: pointer;
   transition: 0.3s;
 }
-.profile-card img:hover {
-  transform: rotate(5deg) scale(1.1, 1.1);
+.profile-card .btnEndSidecar {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+.profile-card .btnModification {
+  margin-right: 20px;
+  border: 10px;
+  border-radius: 50%;
+  background-color: #7dabd1;
+}
+.profile-card .btnTrash {
+  background-color: #7dabd1;
+  border: 3px;
+  border-radius: 50%;
 }
 
+.profile-card .btnModification:hover {
+  color: white;
+}
+
+.profile-card .btnTrash:hover {
+  color: white;
+}
+.profile-card .btn-close {
+  position: absolute;
+  margin-left: 15px;
+  margin-top: 10px;
+  background-color: white;
+}
+@media screen and (max-width: 600px) {
+  .btnEndSidecar {
+    justify-content: center;
+  }
+}
+/* Fixed sidebars */
+.paper {
+  position: absolute;
+  height: 550px;
+  width: 450px;
+  background: rgba(255,255,255,0.9);
+  box-shadow: 0px 0px 5px 0px #888;
+  top: 275px;
+}
+.paper::before {
+  content: '';
+  position: absolute;
+  left: 45px;
+  height: 100%;
+  width: 2px;
+  background: rgba(255,0,0,0.4);
+}
+.lines {
+  margin-top: 40px;
+  height: calc(100% - 40px);
+  width: 100%;
+  background-image: repeating-linear-gradient(white 0px, white 24px, steelblue 25px);
+}
+.text {
+  position: absolute;
+  top: 65px;
+  left: 55px;
+  bottom: 10px;
+  right: 10px;
+  line-height: 25px;
+  overflow: hidden;
+  outline: none;
+}
+.holes {
+  position: absolute;
+  left: 10px;
+  height: 25px;
+  width: 25px;
+  background: lightgoldenrodyellow;
+  border-radius: 50%;
+  box-shadow: inset 0px 0px 2px 0px #888;
+}
+.hole-top {
+  top: 10%;
+}
+.hole-middle {
+  top: 50%;
+}
+.hole-bottom {
+  bottom: 10%;
+}
+
+.box {
+  background: #fff;
+  padding: 16px 24px;
+  position: relative;
+  border-radius: 8px;
+  height : 55px;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, .01);
+  left: -1050px;
+}
+
+@keyframes animateGlow {
+  0% {
+    background-position: 0% 50%;
+ }
+  100% {
+    background-position: 200% 50%;
+ }
+}
+
+@media (max-width: 1500px) {
+  .paper {
+    width: 40%;
+    height: 80%;
+
+    top: 275px;
+  }
+}
+@media (max-width: 1188px) {
+  .paper {
+    width: 50%;
+    height: 80%;
+
+    top: 275px;
+  }
+}
+@media (max-width: 1016px) {
+  .paper {
+    width: 50%;
+    height: 80%;
+
+    top: 275px;
+  }
+}
+@media (max-width: 768px) {
+  header {
+    z-index: 1;
+  }
+  .paper {
+   display: none;
+
+  }
+  .box {
+    position: absolute;
+    top: 25% ;
+    left: 38%;
+
+  }
+  .box::after {
+    position: absolute;
+    content: "";
+    top: 15px;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    transform: scale(0.9) translateZ(0);
+    filter: blur(15px);
+    background: linear-gradient(to left, #ff5770, #e4428d, #c42da8, #9e16c3, #6501de, #9e16c3, #c42da8, #e4428d, #ff5770);
+    background-size: 200% 200%;
+    animation: animateGlow 1.25s linear infinite;
+  }
+}
+@media (max-width: 500px) {
+  .paper {
+   display: none;
+
+  }
+  .box {
+    position: absolute;
+    top: 25% ;
+    left: 33%;
+
+  }
+}
+/* end Fixed sidebars */
 /*Footer*/
 
 footer{
@@ -456,14 +626,13 @@ option{
   }
 
   .sidebar-section{
-    min-width: 370px;
+   min-width: 370px;
    position: fixed;
    left: 50%;
    transform:  translate(-50%);
    z-index: 10;
    background-color: rgba(168, 168, 168, 0.705);
    width: 100%;
-   height: 100%;
    top: 0;
   }
 
@@ -473,12 +642,12 @@ option{
 
   .main-card{
     margin: 3%;
-
   }
   
   .profile-card{
     max-width: none;
     width: 100%;
+
   }
 
   .profile-card img{
@@ -490,7 +659,7 @@ option{
 #image_suit_souris{
   position:absolute;
   display:block;
-  z-index:5;
+  z-index:12;
   width: 40px;
   height: 40px;
 }
