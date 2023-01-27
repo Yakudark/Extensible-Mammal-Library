@@ -143,6 +143,7 @@ xhr.onreadystatechange = function() {
   } 
  
 };
+
 function closeMainCard() {
   const mainCard = document.querySelector('.main-card');
   mainCard.style.display = 'none';
@@ -161,3 +162,4 @@ function closeMainCard() {
 </section>`
                         
 }
+
