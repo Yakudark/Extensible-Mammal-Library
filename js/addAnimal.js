@@ -1,5 +1,6 @@
 
 const form = document.querySelector('.modal form')
+
   form.onsubmit = (e) => {
     e.preventDefault()
 
