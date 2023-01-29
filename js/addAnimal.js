@@ -24,61 +24,47 @@ const form = document.querySelector('.modal form')
     const dailySleep = form[7].value
     const famousAnimal = form[14].value
 
-    const location = []
+    let location = ""
     const locationTab = form.querySelectorAll('input[name="location"]')
     locationTab.forEach(el => {
       if(el.checked == true){
-        location.push(el.value) 
+        location += `${el.value} `
       }
     });
 
  console.log(location)
 
+      
+        // Création un objet contenant les données du formulaire 
+    const objectData = {name : animalName,
+      img : img,
+      description : description,
+      height : height,
+      weight : weight,
+      speed : speed,
+      lifeSpan: lifeSpan,
+      gestationPeriod : gestationPeriod,
+      dailySleep : dailySleep,
+      location : location,
+      famousAnimal : famousAnimal
+    }
     
-
-// Récupération du fichier XML
-    const xhrGet = new XMLHttpRequest();
-    xhrGet.open("GET", "./index.xml", true);
-    xhrGet.send();
-    
-     
-    xhrGet.onreadystatechange = function() {
-      if (this.readyState == 4 && this.status == 200) {
-        
-        const xml = this.responseXML;
-        const root = xml.querySelector('root')
-     // Ajout du nouvel animal dans la racine fichier
-        const objectData = {name : animalName,
-        img : img,
-        description : description,
-        height : height,
-        weight : weight,
-        speed : speed,
-        lifeSpan: lifeSpan,
-        gestationPeriod : gestationPeriod,
-        dailySleep : dailySleep,
-        location : {area : location },
-        famousAnimal : famousAnimal
-      }
-
-
-        console.log()
 
       // Envoyer la requête au script PHP 
       // qui nous permettra de sauvegarder les données
         const xhrPost = new XMLHttpRequest();
-        xhrPost.open("POST", "http://127.0.0.1:8000", true);
+        xhrPost.open("POST", "http://127.0.0.1:8000/addAnimal.php", true);
         xhrPost.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
         xhrPost.setRequestHeader("Access-Control-Allow-Origin", "*");
-        xhrPost.setRequestHeader("Sec-Fetch-Mode", "no-cors");
-        xhrPost.setRequestHeader("Sec-Fetch-Site", "cross-site");
+        xhrPost.setRequestHeader("Access-Control-Allow-Methods", "*");
+ 
+        
         xhrPost.onreadystatechange = function() {
             if (xhrPost.readyState === 4 && xhrPost.status === 200) {
                 console.log(xhrPost.responseText);
           
             }
         };
+        console.log(objectData)
         xhrPost.send(`data= ${JSON.stringify(objectData)}`);
-      }
-     }
   }

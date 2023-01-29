@@ -23,7 +23,7 @@ body {
   min-width: 370px;
 }
 *{
-    font-family: 'Londrina Solid', cursive;
+    font-family: 'Londrina Solid', 'Cutiemolly', sans-serif;
     box-sizing: border-box;
 }
 
@@ -164,11 +164,14 @@ header a:hover {
   left: 90%;
   right: 0;
   margin: auto;
-  width: 60px;
+
+  width: fit-content;
   height: 60px;
   opacity: 0;
   transition: 0.5s;
 }
+
+
 .menu-item a {
   display: block;
   line-height: 30px;
@@ -188,7 +191,6 @@ header a:hover {
   color: var(--card);
   background: var(--shadow);
   font-size: 30px;
-  
 }
 /* ------------end menu toggler -------------- */
 
@@ -204,6 +206,7 @@ header a:hover {
   height: 120px;
 }
 
+
 .banner .background{
   background: url('https://static.vecteezy.com/system/resources/thumbnails/012/792/138/small_2x/tropical-jungle-forest-landscape-with-cute-animals-web-banner-with-lion-monkeys-and-toucan-in-cartoon-style-zoo-poster-horizontal-rainforest-with-flowers-and-pond-vector.jpg');
   width: 100%;
@@ -212,23 +215,25 @@ header a:hover {
   background-position-x:50%;
   opacity: 0.7;
 
+
 }
 
 .banner .pattern{
   
-  /* background: url('https://static.vecteezy.com/system/resources/previews/001/209/804/original/square-pattern-png.png'); */
   background: url('https://www.transparentpng.com/thumb/pattern/t6BHdn-pattern-clipart-ornamental-pattern-ornamental-transparent.png');
   position: absolute;
   top: 0;
   width: 100%;
   height: 100%;
   opacity: 0.25;
+
 }
 
 
 .banner h1{
   font-size: 30px;
   position: absolute;
+  width: max-content;
   top: 50%;
   left: 50%;
   transform: translateX(-50%) translateY(-50%);
@@ -247,15 +252,17 @@ main{
 
   img {
     height: 150px;
-    margin-top: 10px;
     border-radius: 5px 5px 0 0;
+    object-fit: cover;
   }
 
   .card{
     transition: 300ms;
-    width: 18rem;
+    width: 23%;
     border: none; 
     box-shadow: 0px 0px 5px var(--shadow);
+    margin: 0.8%;
+    padding: 1% !important;
   }
 
 .card:hover {
@@ -265,7 +272,7 @@ main{
 /*sidebar*/
 
 .sidebar-section{
-    width: 400px;
+    width: 30%;
     display: none;
 }
 
@@ -275,7 +282,7 @@ main{
     top: 100px;
     left: 5%;
     position: sticky;
-    z-index: 10;
+    z-index: 0;
 }
 .profile-card {
     max-width: 300px;
@@ -322,11 +329,12 @@ main{
     font-size: 16px !important;
     margin: 5px;
 }
+
 .profile-card h4{
     font-size: 19px;
 }
-.profile-card .profile-description {
 
+.profile-card .profile-description {
     color: #777;
     font-size: 15px;
     padding: 10px;
@@ -335,7 +343,6 @@ main{
 .profile-card .profile-overview {
     padding: 5px 0px;
 }
-
 
 .profile-card .profile-overview p {
   font-size: 10px;
@@ -376,29 +383,42 @@ main{
   margin-bottom: 10px;
 }
 .profile-card .btnModification {
+  border: none;
+  color: white;
   margin-right: 20px;
-  border: 10px;
   border-radius: 50%;
-  background-color: #7dabd1;
+  background-color: #5799cf;
+  height: 35px;
+  width: 35px;
+  transition: 400ms;
 }
 .profile-card .btnTrash {
-  background-color: #7dabd1;
-  border: 3px;
+  border: none;
+  color: white;
   border-radius: 50%;
+  background-color: #5799cf;
+  height: 35px;
+  width: 35px;
+  transition: 400ms;
 }
 
 .profile-card .btnModification:hover {
-  color: white;
+  color: #009316;
+  background-color: var(--primary);
+  box-shadow: 0px 3px 5px #00000055;
 }
 
 .profile-card .btnTrash:hover {
-  color: white;
+  color: #9e0000;
+  background-color: var(--primary);
+  box-shadow: 0px 3px 5px #00000055;
 }
 .profile-card .btn-close {
   position: absolute;
   margin-left: 15px;
   margin-top: 10px;
   background-color: white;
+  cursor: pointer;
 }
 @media screen and (max-width: 600px) {
   .btnEndSidecar {
@@ -407,13 +427,14 @@ main{
 }
 /* Fixed sidebars */
 .paper {
-  position: absolute;
+  position: sticky;
   height: 550px;
-  width: 450px;
+  width: 90%;
   background: rgba(255,255,255,0.9);
-  box-shadow: 0px 0px 5px 0px #888;
-  top: 275px;
+  box-shadow: 0px 0px 5px 0px rgba(136, 136, 136, 0.455);
+  margin: auto;
 }
+
 .paper::before {
   content: '';
   position: absolute;
@@ -443,7 +464,7 @@ main{
   left: 10px;
   height: 25px;
   width: 25px;
-  background: lightgoldenrodyellow;
+  background: var(--background);
   border-radius: 50%;
   box-shadow: inset 0px 0px 2px 0px #888;
 }
@@ -459,12 +480,14 @@ main{
 
 .box {
   background: #fff;
-  padding: 16px 24px;
+  width: 200px;
+  text-align: center;
+  padding: 10px 15px;
   position: relative;
   border-radius: 8px;
-  height : 55px;
   box-shadow: 0 0 0 1px rgba(0, 0, 0, .01);
   left: -1050px;
+  display: none;
 }
 
 @keyframes animateGlow {
@@ -476,70 +499,105 @@ main{
  }
 }
 
-@media (max-width: 1500px) {
-  .paper {
-    width: 40%;
-    height: 80%;
-
-    top: 275px;
+@media (max-width: 1150px) {
+  .paper{
+    font-size: 15px;
   }
 }
-@media (max-width: 1188px) {
-  .paper {
-    width: 50%;
-    height: 80%;
 
-    top: 275px;
-  }
-}
-@media (max-width: 1016px) {
-  .paper {
-    width: 50%;
-    height: 80%;
-
-    top: 275px;
-  }
-}
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   header {
     z-index: 1;
   }
+
+  .card{
+    transition: 300ms;
+    width: 40%;
+    border: none; 
+    box-shadow: 0px 0px 5px var(--shadow);
+    margin: 0.8%;
+  }
   .paper {
-   display: none;
-
-  }
-  .box {
+    display: none;
+   }
+ 
+   .box {
     position: absolute;
-    top: 25% ;
-    left: 38%;
-
+    top: 170px;
+    left: calc(50% - 100px);
+    display: initial;
   }
+
   .box::after {
-    position: absolute;
     content: "";
-    top: 15px;
+    position: absolute;
+    top: 5px;
     left: 0;
     right: 0;
-    z-index: -1;
+    z-index: -2;
     height: 100%;
     width: 100%;
-    transform: scale(0.9) translateZ(0);
-    filter: blur(15px);
-    background: linear-gradient(to left, #ff5770, #e4428d, #c42da8, #9e16c3, #6501de, #9e16c3, #c42da8, #e4428d, #ff5770);
+    transform: scale(0.9) translateZ(0) translateX(0);
+    filter: blur(10px);
+    background: linear-gradient(to left, #7dabd1, #4e8c50, #7dabd1, #4e8c50, #7dabd1, #4e8c50, #7dabd1, #4e8c50);
     background-size: 200% 200%;
     animation: animateGlow 1.25s linear infinite;
   }
+  .sidebar-section{
+    width: auto;
+  }
+}
+
+@media (max-width: 560px) {
+  header {
+    z-index: 1;
+  }
+
+  .card{
+    transition: 300ms;
+    width: 80% !important;
+    border: none; 
+    box-shadow: 0px 0px 5px var(--shadow);
+
+  }
+}
+
+@media (max-width: 768px) {
+  .banner{
+    position: relative;
+    width: 100%;
+    height: 250px;
+  }
+  
+  header {
+    z-index: 1;
+  }
+
+  .menu label{
+    margin-right: auto;
+  }
+  .card{
+    transition: 300ms;
+    width: 40%;
+    border: none; 
+    box-shadow: 0px 0px 5px var(--shadow);
+    margin: 10px;
+  }
+  .box {
+    position: absolute;
+    top: 285px ;
+    left: calc(50% - 100px);
+    display: initial;
+  }
+ 
+
+  
+
+ 
 }
 @media (max-width: 500px) {
   .paper {
    display: none;
-
-  }
-  .box {
-    position: absolute;
-    top: 25% ;
-    left: 33%;
-
   }
 }
 /* end Fixed sidebars */
@@ -555,7 +613,7 @@ footer span {
   margin: 10px 0 10px 0;
   font-weight: 300;
   font-size: 18px;
-  color: var(--font);
+  color: #cecece;
 }
 
 .footer-content {
@@ -603,6 +661,14 @@ footer span {
   background: #609fd2;
 }
 
+#modal_statistique .modal-dialog{
+  width: 80%;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%)translateY(-50%);
+}
+
 .form-control {
   margin-bottom: 10px; 
 }
@@ -628,7 +694,6 @@ textarea{
 }
 
 select{
-  
   background: white;
   border: 0;
   border-radius: 5px;
@@ -648,8 +713,32 @@ option{
     font-size: 18px;
   }
 
-  .sidebar-section{
+  header .logo{
+    font-size: 40px;
+  }
 
+  header .menu-item a {
+    height: 40px;
+    width: 40px;
+    font-size: 20px;
+    padding: 0;
+    margin: 0;
+    line-height: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  header .menu-item a:hover {
+    height: 40px;
+    width: 40px;
+    font-size: 20px;
+    color : white 
+  }
+  
+
+  .sidebar-section{
+    display: none !important;
     min-width: 370px;
    position: fixed;
    left: 50%;
@@ -683,11 +772,21 @@ option{
     object-fit: cover;
   }
 
+  #modal_statistique .modal-dialog{
+    width: 95%;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    margin: 0;
+    min-width: 370px;
+  }
+
 }
 /* -----------------Follow cursor----------------- */
 #image_suit_souris{
   position:absolute;
-  display:block;
+  display:none;
   z-index:12;
   width: 40px;
   height: 40px;

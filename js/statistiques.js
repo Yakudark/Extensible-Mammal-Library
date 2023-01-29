@@ -14,9 +14,9 @@ function parseXML(xml) {
     var speeds = [];
     var heights = [];
     for (var i = 0; i < species.length; i++) {
-        animals.push(species[i].getElementsByTagName("name")[0].childNodes[0].nodeValue);
-        speeds.push(species[i].getElementsByTagName("speed")[0].childNodes[0].nodeValue);
-        heights.push(species[i].getElementsByTagName("height")[0].childNodes[0].nodeValue);
+        animals.push(species[i].getElementsByTagName("name")[0].innerHTML);
+        speeds.push(species[i].getElementsByTagName("speed")[0].innerHTML);
+        heights.push(species[i].getElementsByTagName("height")[0].innerHTML);
     }
 
     var ctx = document.getElementById("chart").getContext("2d");

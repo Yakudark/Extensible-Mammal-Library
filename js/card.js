@@ -1,3 +1,5 @@
+
+
 // Création et configuration d'un objet XML
 var xhr = new XMLHttpRequest();
 xhr.open("GET", "./index.xml", true);
@@ -24,7 +26,6 @@ xhr.onreadystatechange = function() {
         containerCard.innerHTML += `<div class="card">
         <img
           src= ${imgUrl}
-          class="card-img-panda"
         />
         <div class="card-body">
           <p class="card-text d-flex justify-content-center">${animalName}</p>
@@ -35,6 +36,7 @@ xhr.onreadystatechange = function() {
         const cards = document.querySelectorAll('.card')
         cards.forEach(card => {
             card.onclick = () => {
+              
               const nameOnCard = card.children[1].children[0].textContent
               
               for (let j = 0; j < speciesTab.length; j++) {
@@ -55,6 +57,9 @@ xhr.onreadystatechange = function() {
 
 
                 const containerSideBar = document.querySelector('.sidebar-section')
+ 
+                  containerSideBar.style.cssText ="display : initial !important"
+                
                 containerSideBar.innerHTML = `<div class="main-card">
                 <div class="profile-card text-center">
                 <boutton id="btn-close" class="btn-close" onclick="closeMainCard()">
@@ -117,14 +122,14 @@ xhr.onreadystatechange = function() {
                           </div>
                           
                           <div class="btnEndSidecar"> 
-                    <div>
+                    
                     <button type="button" id="modification" class="btnModification">
-                    <span onclick="modifSidebarSection"><i class="bi bi-pencil-square"></i></span></button>
-                    </div>
-                    <div>
-                    <button type="button" id="modification" class="btnTrash">
-                    <span onclick="trashSidebarSection"><i class="bi bi-trash3-fill"></i></span></button>
-                    </div> 
+                    <i class="bi bi-pencil-square"></i></button>
+                    
+                 
+                    <button type="button" id="modification" class="btnTrash" onclick=deleteCard()>
+                    <i class="bi bi-trash3-fill"></i></button>
+                   
                 </div>
       </div>
                         </div>
@@ -144,22 +149,28 @@ xhr.onreadystatechange = function() {
  
 };
 
-function closeMainCard() {
-  const mainCard = document.querySelector('.main-card');
-  mainCard.style.display = 'none';
-  const containerSideBar = document.querySelector('.sidebar-section')
-  containerSideBar.innerHTML = `<section class="sidebar-section d-inline">
-  <div class="paper">
-    <div class="lines">
-      <div class="text" contenteditable spellcheck="false">
-        Choose your animal ! <br /><br />
-        Mammals are a group of animals that have many unique characteristics. One of the most notable is that they have hair or fur on their bodies. This can help to keep them warm and protect them from the elements. Another important feature of mammals is that they feed their babies with milk from their mothers. This is called lactation and it is how young mammals are able to grow and develop. Other examples of mammals include dogs, cats, bears, elephants, and humans. They come in all different shapes and sizes, and can be found all over the world.</div>
-    </div>
-    <div class="holes hole-top"></div>
-    <div class="holes hole-middle"></div>
-    <div class="holes hole-bottom"></div>
-  </div>
-</section>`
-                        
-}
 
+
+
+
+
+closeMainCard()
+function closeMainCard() {
+  const containerSideBar = document.querySelector('.sidebar-section')  
+  if(screen.width <= 768){
+    containerSideBar.style.cssText ="display : none !important"
+  } else {
+    containerSideBar.innerHTML = `
+    <div class="paper">
+      <div class="lines">
+        <div class="text" contenteditable spellcheck="false">
+          Choose your animal ! <br /><br />
+          Mammals are a group of animals that have many unique characteristics. One of the most notable is that they have hair or fur on their bodies. This can help to keep them warm and protect them from the elements. Another important feature of mammals is that they feed their babies with milk from their mothers. This is called lactation and it is how young mammals are able to grow and develop. Other examples of mammals include dogs, cats, bears, elephants, and humans. They come in all different shapes and sizes, and can be found all over the world.</div>
+      </div>
+      <div class="holes hole-top"></div>
+      <div class="holes hole-middle"></div>
+      <div class="holes hole-bottom"></div>
+    </div>`             
+  }  
+  }
+  
