@@ -15,5 +15,6 @@ for ($i = 0; $i < count($xml->species); $i++) {
         unset($xml->species[$i]);
     }
 };
+
 $xml->saveXML('../index.xml');
 echo  "ok!";

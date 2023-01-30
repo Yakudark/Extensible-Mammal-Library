@@ -48,8 +48,7 @@ const form = document.querySelector('.modal form')
       location : location,
       famousAnimal : famousAnimal
     }
-    
-
+  
       // Envoyer la requête au script PHP 
       // qui nous permettra de sauvegarder les données
         const xhrPost = new XMLHttpRequest();

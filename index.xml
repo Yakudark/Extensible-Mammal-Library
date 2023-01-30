@@ -1,18 +1,6 @@
 <?xml version="1.0" encoding="iso-8859-1"?>
 <root>
-    <species>
-        <name>Fox</name>
-        <img>https://radiodisneyclub.fr/wp-content/uploads/2015/12/3053061241_1_3_Tp1g4dCF-1280x720.jpg</img>
-        <description>Foxes are small to medium-sized, omnivorous mammals belonging to several genera of the family Canidae. They have a flattened skull, upright, triangular ears, a pointed, slightly upturned snout, and a long bushy tail (or brush).</description>
-        <height>75</height>
-        <weight>45</weight>
-        <speed>50</speed>
-        <lifeSpan>4</lifeSpan>
-        <gestationPeriod>58</gestationPeriod>
-        <dailySleep>10</dailySleep>
-        <location>Europe North America Asia </location>
-        <famousAnimal> Tod </famousAnimal>
-    </species>
+    
     <species>
         <name>Lion</name>
         <img>https://disney-planet.fr/wp-content/uploads/2015/01/simba-personnage-le-roi-lion-13.jpg</img>
@@ -39,20 +27,8 @@
         <location>Africa </location>
         <famousAnimal>Pumbaa</famousAnimal>
     </species>
-    
-     <species>
-        <name>Elephant</name>
-        <img>https://radiodisneyclub.fr/wp-content/uploads/2018/09/Dumbo_1.jpg</img>
-        <description>Warthogs are members of the same family as domestic pigs, but present a much different appearance. These sturdy hogs are not among the world's most aesthetically pleasing animals—their large, flat heads are covered with "warts," which are actually protective bumps. Warthogs also sport four sharp tusks. They are mostly bald, but they do have some sparse hair and a thicker mane on their backs.</description>
-        <height>300</height> 
-        <weight>5000</weight>
-        <speed>40</speed>
-        <lifeSpan>65</lifeSpan>
-        <gestationPeriod>650</gestationPeriod>
-        <dailySleep>5</dailySleep>
-        <location>Africa Asia</location>
-        <famousAnimal>Dumbo</famousAnimal>
-    </species>
+<species><name>Elephant</name><img>https://radiodisneyclub.fr/wp-content/uploads/2018/09/Dumbo_1.jpg</img><description>description</description><height>300</height><weight>5000</weight><speed>40</speed><lifeSpan>65</lifeSpan><gestationPeriod>650</gestationPeriod><dailySleep>0</dailySleep><location>Africa Asia </location><famousAnimal>Dumbo</famousAnimal></species>
+
 </root>
 <!-- 
     <species>

@@ -1,7 +1,7 @@
 
 
 // Création et configuration d'un objet XML
-var xhr = new XMLHttpRequest();
+const xhr = new XMLHttpRequest();
 xhr.open("GET", "./index.xml", true);
 xhr.send();
 
@@ -123,7 +123,7 @@ xhr.onreadystatechange = function() {
                           
                           <div class="btnEndSidecar"> 
                     
-                    <button type="button" id="modification" class="btnModification">
+                    <button id="modification" class="btnModification" onclick=editCard() href="#">
                     <i class="bi bi-pencil-square"></i></button>
                     
                  
@@ -154,7 +154,7 @@ xhr.onreadystatechange = function() {
 
 
 
-closeMainCard()
+
 function closeMainCard() {
   const containerSideBar = document.querySelector('.sidebar-section')  
   if(screen.width <= 768){

@@ -391,6 +391,9 @@ main{
   height: 35px;
   width: 35px;
   transition: 400ms;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .profile-card .btnTrash {
   border: none;
@@ -426,6 +429,31 @@ main{
   }
 }
 /* Fixed sidebars */
+.editModal{
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0px;
+  z-index: 50;
+  background: rgba(0, 0, 0, 0.569)
+}
+.editModal .modal-dialog{
+  border-radius: 5px;
+  box-shadow: black 0px 0px 10px;
+
+}
+.editModal .modal-content{
+  border-radius: 5px;
+  box-shadow: black 0px 0px 10px;
+  width: 40% !important;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+.editModal .modal-header{
+  border-radius: 5px;
+}
 .paper {
   position: sticky;
   height: 550px;
@@ -502,6 +530,9 @@ main{
 @media (max-width: 1150px) {
   .paper{
     font-size: 15px;
+  }
+  .editModal .modal-content{
+    width: 70% !important;
   }
 }
 
@@ -629,7 +660,7 @@ footer span {
   background: var(--background) !important;
 }
 
-#add-animal {
+#add-animal , #edit-animal {
   background: var(--primary);
   color: white;
   width: 25%;
@@ -640,7 +671,7 @@ footer span {
   transition: 500ms;
 }
 
-#add-animal:hover {
+#add-animal:hover, #edit-animal:hover {
   transform: translateX(-50%) scale(1.07);
   filter: brightness(1.1);
 }
@@ -736,6 +767,9 @@ option{
     color : white 
   }
   
+  .editModal .modal-content{
+    width: 90% !important;
+  }
 
   .sidebar-section{
     display: none !important;
