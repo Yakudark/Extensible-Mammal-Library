@@ -10,6 +10,17 @@
   $data = json_decode($_POST['data']);
   // $data = new SimpleXMLElement();
 
+
+  $isExist = false;
+  $speciesArr = $xml->species;
+  for ($i = 0; $i < count($speciesArr); $i++) {
+    if ($speciesArr[$i]->name == $data->name) {
+      $isExist = true;
+      break;
+    }
+  };
+  echo $isExist;
+
   $species = $xml->addChild('species');
   $species->addChild('name', $data->name);
   $species->addChild('img', $data->img);
@@ -23,9 +34,9 @@
   $species->addChild('location', $data->location);
   $species->addChild('famousAnimal', $data->famousAnimal);
 
-
-  if ($species->name != "") {
+  if ($species->name != "" && $isExist === false) {
     $xml->saveXML('../index.xml');
-  }
-
-  echo  "ok!";
+    // $image_data = file_get_contents($data->img); // Récupère les données de l'image
+    // $file_path = "./assets/img.img"; // Spécifie le chemin de destination
+    // file_put_contents($file_path, $image_data); // Enregistre l'image localement
+  };

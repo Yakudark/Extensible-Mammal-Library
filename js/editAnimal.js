@@ -50,12 +50,13 @@ xhr.onreadystatechange = function() {
         const dailySleep = species[i].children[8].textContent
         const location = species[i].children[9].textContent.split(' ')
         const famousAnimal = species[i].children[10].textContent
-
+        
         editModalBody.innerHTML = `<form class="flex-col col-11"><div class="row gap-md-5">
     <div class="col">
       <label class="form-label">Image url</label>
       <input type="text" class="form-control" id="url" value=${imgUrl} required/>
-   </div>
+      <!-- <input class="form-control" type="file" id="formFile" value=${imgUrl}> -->
+      </div>
     <div class="col">
     <label class="form-label">Name</label>
     <input type="text" class="form-control" id="name" value=${animalName} readonly required/>

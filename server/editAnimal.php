@@ -9,9 +9,7 @@ header("Access-Control-Max-Age: 86400");
 $xml = simplexml_load_file('../index.xml');
 $data = json_decode($_POST['data']);
 
-
 for ($i = 0; $i < count($xml->species); $i++) {
-
     if ($xml->species[$i]->name->__toString() == $data->name) {
         $xml->species[$i]->img = $data->img;
         $xml->species[$i]->description = $data->description;

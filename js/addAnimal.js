@@ -7,8 +7,8 @@ const form = document.querySelector('.modal form')
     // Récupération des données du formulaire 
     const animalName = form[1].value
 
-    const img = form[0].value
-
+    const img = form[0].value;
+    
     const description = form[15].value
 
     const height = form[3].value
@@ -60,10 +60,17 @@ const form = document.querySelector('.modal form')
         
         xhrPost.onreadystatechange = function() {
             if (xhrPost.readyState === 4 && xhrPost.status === 200) {
-                console.log(xhrPost.responseText);
-          
+              console.log(xhrPost.responseText);
+
+              if(xhrPost.responseText == 1){
+                const errorSpan = document.createElement('span')
+                errorSpan.innerText = "Nom d'animal non valide ou déja existant"
+                errorSpan.style.color = 'red'
+                document.querySelector('form .row:first-Child').before(errorSpan)
+              }
             }
         };
+        
         console.log(objectData)
         xhrPost.send(`data= ${JSON.stringify(objectData)}`);
   }

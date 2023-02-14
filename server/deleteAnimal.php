@@ -10,7 +10,6 @@ $xml = simplexml_load_file('../index.xml');
 $data = $_POST['data'];
 
 for ($i = 0; $i < count($xml->species); $i++) {
-
     if ($xml->species[$i]->name->__toString() == $data) {
         unset($xml->species[$i]);
     }

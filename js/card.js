@@ -154,11 +154,12 @@ xhr.onreadystatechange = function() {
 
 
 
-
+closeMainCard()
 function closeMainCard() {
   const containerSideBar = document.querySelector('.sidebar-section')  
-  if(screen.width <= 768){
+  if(window.innerWidth <= 768){
     containerSideBar.style.cssText ="display : none !important"
+  console.log('moins que 768px');
   } else {
     containerSideBar.innerHTML = `
     <div class="paper">
