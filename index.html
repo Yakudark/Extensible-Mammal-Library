@@ -98,12 +98,12 @@
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body flex-col d-flex justify-content-center">
-         <form class="flex-col col-11">
+         <form class="flex-col col-11" enctype="multipart/form-data">
           <div class="row gap-md-5">
             <div class="col">
-              <label for="formFile" class="form-label">Image url</label>
+              <label for="image" class="form-label">Image url</label>
               <input type="url" class="form-control" id="url" required/>
-              <!-- <input class="form-control" type="file" id="formFile" required> -->
+              <!-- <input class="form-control" type="file" name="image" required> -->
             </div>
             <div class="col">
             <label class="form-label">Name</label>

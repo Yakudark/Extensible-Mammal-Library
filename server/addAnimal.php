@@ -33,10 +33,6 @@
   $species->addChild('dailySleep', $data->dailySleep);
   $species->addChild('location', $data->location);
   $species->addChild('famousAnimal', $data->famousAnimal);
-
   if ($species->name != "" && $isExist === false) {
     $xml->saveXML('../index.xml');
-    // $image_data = file_get_contents($data->img); // Récupère les données de l'image
-    // $file_path = "./assets/img.img"; // Spécifie le chemin de destination
-    // file_put_contents($file_path, $image_data); // Enregistre l'image localement
   };
